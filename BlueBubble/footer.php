@@ -12,7 +12,7 @@
 <?php } // End check for Twitter Count Number ?>"></script><?php } // End check for Twitter ?> 
 
 <?php if ( get_option('bb_ga_code') ) { ?><!-- START Google Analytics Code -->
-<script><?php echo get_option('bb_ga_code'); ?></script>
+<script><?php echo stripslashes(get_option('bb_ga_code')); ?></script>
 <!-- END Google Analytics Code --> 
 <?php } // End check for Google Analytics ?>
 

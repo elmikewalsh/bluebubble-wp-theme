@@ -22,7 +22,6 @@ if ( function_exists('register_sidebar') )
 require_once('includes/bb-widgets.php');
 
 
-
 /* Add Post Image Theme Support */
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'portfolio-thumb', 310, 150, true );
@@ -45,6 +44,42 @@ function register_my_menus() {
 			'fourth-menu' => __( 'Top', 'Top Menu' ),
 		)
 	);
+}
+
+?>
+<?php if ( get_option('bb_custom_login') ) {
+/* Custom Login Screen */
+function custom_login() { 
+echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/css/custom-login/custom-login.css" />'; 
+}
+add_action('login_head', 'custom_login');
+}  /* End of Custom Login Screen */ 
+
+
+/* Limit Title Characters */
+function short_title($before = '', $after = '', $echo = true, $length = false) {
+$title = get_the_title();
+
+if ( $length && is_numeric($length) && strlen($title) >= $length) {
+$title = substr( $title, 0, $length ); // Trim title to 40 characters
+$lastSpace = strrpos($title, ' '); // Locate the last space in the title
+$title = substr($title, 0, $lastSpace); // Trim the portion of the last word off
+}
+
+if ( strlen($title)> 0 ) {
+
+$title = apply_filters('short_title', $before . $title . $after, $before, $after);
+
+if ( $echo )
+
+echo $title;
+
+else
+
+return $title;
+
+}
+
 }
 
 
@@ -132,29 +167,17 @@ function meta_boxes() {
 
 /* Shortcodes */
 	function alert($atts, $content = null) {
-	    return '<div class="alert">'.$content.'</div>';}
+	    return '<div class="alert">'.$content.'</div></br>';}
     add_shortcode('alert', 'alert');
-	function alertbig($atts, $content = null) {
-	    return '<div class="alertbig">'.$content.'</div>';}
-    add_shortcode('alertbig', 'alertbig');
 	function dload($atts, $content = null) {
-	    return '<div class="download">'.$content.'</div>';}
+	    return '<div class="dload">'.$content.'</div></br>';}
     add_shortcode('dload', 'dload');
-	function dloadbig($atts, $content = null) {
-	    return '<div class="dloadbig">'.$content.'</div>';}
-    add_shortcode('dloadbig', 'dloadbig');
 	function info($atts, $content = null) {
-	    return '<div class="info">'.$content.'</div>';}
+	    return '<div class="info">'.$content.'</div></br>';}
     add_shortcode('info', 'info');
-	function infobig($atts, $content = null) {
-	    return '<div class="infobig">'.$content.'</div>';}
-    add_shortcode('infobig', 'infobig');
 	function idea($atts, $content = null) {
-	    return '<div class="idea">'.$content.'</div>';}
+	    return '<div class="idea">'.$content.'</div></br>';}
     add_shortcode('idea', 'idea');
-	function ideabig($atts, $content = null) {
-	    return '<div class="ideabig">'.$content.'</div>';}
-    add_shortcode('ideabig', 'ideabig');
 
 function gbutton($atts, $content = null) {
 	extract(shortcode_atts(array(
@@ -172,6 +195,33 @@ function bbutton($atts, $content = null) {
 	return '<a class="bbutton" href="'.$url.'">'.$content.'</a>';
 }
 add_shortcode('bbutton', 'bbutton');
+
+
+/* Adds Shortcodes to Wordpress Editor */
+add_action('init', 'add_button');
+
+function add_button() {
+   if ( current_user_can('edit_posts') &&  current_user_can('edit_pages') )
+   {
+     add_filter('mce_external_plugins', 'add_plugin');
+     add_filter('mce_buttons_3', 'register_button');
+   }
+}
+
+function register_button($buttons) {
+   array_push($buttons, "alert", "dload", "info", "idea", "|", "gbutton", "bbutton");
+   return $buttons;
+}
+
+function add_plugin($plugin_array) {
+   $plugin_array['alert'] = get_bloginfo('template_url').'/scripts/customcodes.js';
+   $plugin_array['dload'] = get_bloginfo('template_url').'/scripts/customcodes.js';
+   $plugin_array['info'] = get_bloginfo('template_url').'/scripts/customcodes.js';
+   $plugin_array['idea'] = get_bloginfo('template_url').'/scripts/customcodes.js';
+   $plugin_array['gbutton'] = get_bloginfo('template_url').'/scripts/customcodes.js';
+   $plugin_array['bbutton'] = get_bloginfo('template_url').'/scripts/customcodes.js';
+   return $plugin_array;
+}
 
 
 /* Allows Shortcodes in Sidebars */
@@ -242,6 +292,18 @@ array( "name" => __("Horizontal Top Menu", 'BlueBubble'),
 array( "name" => __("Legacy Menu Style", 'BlueBubble'),
 	"desc" => __("Check if you want to <strong>turn on</strong> the old BlueBubble navigation menu style, used before BlueBubble 3.0", 'BlueBubble'),
 	"id" => $shortname."_old_menus",
+	"type" => "checkbox",
+	"std" => ""),
+	
+array( "name" => __("Sidebar Login", 'BlueBubble'),
+	"desc" => __("Check if you want to <strong>turn on</strong> a login form in the sidebar", 'BlueBubble'),
+	"id" => $shortname."_login_menu",
+	"type" => "checkbox",
+	"std" => ""),
+
+array( "name" => __("Custom Login", 'BlueBubble'),
+	"desc" => __("Check if you want to <strong>turn on</strong> a custom login screen. (replaces default Wordpress login screen.)", 'BlueBubble'),
+	"id" => $shortname."_custom_login",
 	"type" => "checkbox",
 	"std" => ""),
 		
@@ -543,8 +605,11 @@ if (function_exists('curl_init')) {
 	if($theme_update['current_version'] < $theme_update['new_version'])
 		$opts = "<span class='update-plugins count-1'><span class='update-count'>1</span></span>";
 
+
     add_menu_page('BlueBubble Options', $themename, 'administrator',basename(__FILE__),'mytheme_admin', get_bloginfo('template_url'). '/includes/images/bb-admin-icon.png', 26);
     add_submenu_page(basename(__FILE__), "Theme Updates",  __("Theme Updates") . $opts,'administrator','bb_theme_updates', 'bb_theme_updates', 26);
+// this handles redirect on activating the theme (can be amended for plugin of course)
+if ($_GET['activated']){ wp_redirect(admin_url("admin.php?page=functions.php")); } 
 }
 
 
@@ -560,7 +625,7 @@ function bb_theme_updates(){
 			<p><strong>There is a new version of BlueBubble available</strong>. You have version ' . $theme_update['current_version'] . ' installed.  Please update to <strong>' . $theme_update['new_version'] . '</strong>.</p>
 			</div>
 			<p>Click here to download to your computer: (will not install automatically)</p>
-			<p><a class="button" href="http://bluebubble.dosmundoscafe.com/downloads/bluebubble3.3.rar">Download BlueBubble ' . $theme_update['new_version'] . '</a> RAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="button" href="http://bluebubble.dosmundoscafe.com/downloads/bluebubble3.3.rar">Download BlueBubble ' . $theme_update['new_version'] . '</a> ZIP</p>
+			<p><a class="button" href="http://algo.dosmundoscafe.com/en/descargar/" target="_blank">Download BlueBubble ' . $theme_update['new_version'] . '</a> RAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="button" href="http://algo.dosmundoscafe.com/en/descargar/" target="_blank">Download BlueBubble ' . $theme_update['new_version'] . '</a> ZIP</p>
 			<p><strong>Note:</strong> If you made any changes to the theme files, they will be lost. Make sure to save your changes before installing the new version.</p>
 			<p>The options you set in the BlueBubble Theme Options panel, your menus and your Custom Headers will not be lost.</p>
 			<p><img src="' . get_bloginfo('template_directory') . '/screenshot.png"></p>
@@ -570,7 +635,7 @@ function bb_theme_updates(){
 	else{
 ?>
     <h3><?php echo __('You have the latest version of the <?php echo $themename; ?> Wordpress theme.'); ?></h3>
-    <p><?php echo __('You can always check the official websites for the latest news:</p> <p><a class="button" href="http://bluebubble.dosmundoscafe.com/" target="_blank">BlueBubble Website</a> or <a class="button" href="http://www.flexible7.com/" target="_blank">Flexible7</a>'); ?></p>
+    <p><?php echo __('You can always check the official websites for the latest updates:</p> <p><a class="button" href="http://algo.dosmundoscafe.com/descargar" target="_blank">imaginalgo</a> or <a class="button" href="http://www.flexible7.com/" target="_blank">Flexible7</a></p> <p>For help and support please visit the BlueBubble demo site:</p> <p><a class="button" href="http://bluebubble.dosmundoscafe.com/" target="_blank">BlueBubble Website</a>'); ?></p>
     </div>
 <?php
 	}
@@ -618,7 +683,7 @@ if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><stron
 <span class="left">
 </span>
 <span class="right">
-<h3>BlueBubble v3.3</h3>
+<h3>BlueBubble v3.4</h3>
 <h5>Free Minimal and Elegant Wordpress Theme</h5>
 </span>
 </div>
@@ -692,7 +757,7 @@ if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><stron
 <div class="row">
    <div class="feature-name"><?php echo $value['name']; ?></div>
       <div class="feature">
-         <input class="text" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_settings( $value['id'] ) != "") { echo get_settings( $value['id'] ); } else { echo $value['std']; } ?>" />
+         <input class="text" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_settings( $value['id'] ) != "") { echo stripslashes(get_settings( $value['id'] )); } else { echo $value['std']; } ?>" />
        </div><!--end feature-->
            <div class="description">
               <?php echo $value['desc']; ?>
@@ -712,9 +777,9 @@ if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><stron
      <div class="feature">
          <textarea rows="5" cols="22" class="textarea" name="<?php echo $value['id']; ?>" id="<?php 
 
-echo $value['id']; ?>"><?php if ( get_settings( $value['id'] ) != "") { echo get_settings( $value
+echo $value['id']; ?>"><?php if ( get_settings( $value['id'] ) != "") { echo stripslashes(get_settings( $value
 
-['id'] ); } else { echo $value['std']; } ?></textarea>
+['id'] )); } else { echo $value['std']; } ?></textarea>
      </div><!--end feature-->
          <div class="description">
              <?php echo $value['desc']; ?>
@@ -748,6 +813,8 @@ echo $value['id']; ?>"><?php if ( get_settings( $value['id'] ) != "") { echo get
             switch ( $value['id'] ) {
 			case $shortname."_top_menu":				
             case $shortname."_old_menus":
+			case $shortname."_login_menu":
+			case $shortname."_custom_login":
 			case $shortname."_right_sidebar":			
             ?>        
 
@@ -1189,9 +1256,9 @@ $value['std']; } ?></textarea>
         <?php echo __('<p>BlueBubble is a minimalist and elegant Wordpress portfolio theme originally designed by Thomas Veit, with additions, modifications, and further designs by Mike Walsh beginning with BlueBubble 3.0</p>'); ?>
         <?php echo __('<p>A full list of credits and thanks can be found at the end of the documents provided with the theme.</p>'); ?>
         <?php echo __('<p>You can read the latest news about the BlueBubble Wordpress theme at one of the following sites:</p>'); ?>
+        <p><a class="button" href="http://algo.dosmundoscafe.com/descargar" target="_blank">imaginalgo</a> (English & Espa&ntilde;ol)</p>
         <p><a class="button" href="http://bluebubble.dosmundoscafe.com/" target="_blank">BlueBubble Website</a></p>
         <p><a class="button" href="http://www.flexible7.com/" target="_blank">Flexible7</a></p>
-        <?php echo __('<p><strong>Coming Soon:</strong> Arte Con Alas</p>'); ?>
         <br />
         <?php echo __('<p><strong>Thank you for choosing BlueBubble!</strong></p>'); ?>
             <?php 

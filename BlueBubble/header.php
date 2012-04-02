@@ -14,7 +14,6 @@
 
 
 <!-- ** Stylesheets ** -->
-
 <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/style.css" />
 <?php if ( get_option('bb_color_scheme') != ('light gray (default)') ) { ?><link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/css/<?php echo get_option('bb_color_scheme'); ?>.css" /><?php } // Check for non-Default ?>
 

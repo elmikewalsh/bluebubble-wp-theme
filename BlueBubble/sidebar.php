@@ -27,6 +27,19 @@ foreach ($options as $value) {
 <?php _e('You can place a widget here to remove the text above.', 'BlueBubble') ?>
 <?php endif; ?>
 
+<?php if ( get_option('bb_login_menu') ) { ?>
+<hr class="divider" />
+<?php
+global $user_login;
+if (is_user_logged_in()) {
+    echo __('Welcome, '), $user_login, '. </p><p><a href="wp-admin/post-new.php" title="Write New Post">Write New Post</a><p><a href="wp-admin/admin.php?page=functions.php" title="Admin Panel">Options Panel</a><p><a href="', wp_logout_url('index.php'), '" title="Logout">Logout</a></p>';
+} else {
+    wp_login_form();
+}
+?>
+
+<?php } // End check for Login Menu ?>
+
 
 <?php if (get_option('bb_twitter') ) { ?>  
 <hr class="divider" />

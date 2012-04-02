@@ -3,8 +3,8 @@ Theme Name: BlueBubble
 Theme URI: http://themes.imaginalgo.com/bluebubble/
 Alternate Theme URI: http://www.thomasveit.com/bluebubble-free-premium-wordpress-portfolio-theme/
 Github Theme URI: https://github.com/imaginalgo/bluebubble-wp-theme/
-Description: Minimal &amp; Elegant Portfolio Theme - Wordpress 3.0 ready
-Version: v3.3.1
+Description: Minimal &amp; Elegant Portfolio Theme - Wordpress 3.0 ready. For help please see <a href="../wp-content/themes/BlueBubble/includes/help/en/index.html">the documentation</a>.
+Version: v3.4
 Author: Thomas Veit and Mike Walsh)
 Author URI: http://themes.imaginalgo.com/
 Updates Author URI: http://www.imaginalgo.com
@@ -862,76 +862,41 @@ img.alignleft {
 
 /* Shortcodes CSS */
 
+
 .alert {
-	background:#ffcccc url(images/shortcode/alert16.png) no-repeat;background-position:12px 12px;
-	border:1px solid #ff9999;
-	color:#333333;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	margin:0 0 0 0;
-	padding:10px 15px 10px 40px;
-	}
-.alertbig {
 	background:#ffcccc url(images/shortcode/alert.png) no-repeat;background-position:7px 7px;
 	border:1px solid #ff9999;
 	color:#333333;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	margin:0 0 0 0;
+	margin:10px 0 10px 0;
 	padding:10px 15px 15px 45px;
 	}
 .dload {
-	background:#dee3ab url(images/shortcode/download16.png) no-repeat;background-position:12px 12px;
-	border:1px solid #a3c159;
-	color:#333333;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	margin:0 0 0 0;
-	padding:10px 15px 10px 40px;
-	}
-.dloadbig {
 	background:#dee3ab url(images/shortcode/download.png) no-repeat;background-position:7px 7px;
 	border:1px solid #a3c159;
 	color:#333333;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	margin:0 0 0 0;
+	margin:10px 0 10px 0;
 	padding:10px 15px 18px 45px;
 	}
 .info {
-	background:#bfe4f9 url(images/shortcode/info16.png) no-repeat;background-position:13px 13px;
-	border:1px solid #68a2cf;
-	color:#333333;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	margin:0 0 0 0;
-	padding:10px 15px 10px 40px;
-	}
-.infobig {
 	background:#bfe4f9 url(images/shortcode/info.png) no-repeat;background-position:7px 11px;
 	border:1px solid #68a2cf;
 	color:#333333;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	margin:0 0 0 0;
+	margin:10px 0 10px 0;
 	padding:10px 15px 15px 45px;
 	}
 .idea {
-	background:#fdebae url(images/shortcode/idea16.png) no-repeat;background-position:13px 13px;
-	border:1px solid #e6c555;
-	color:#333333;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	margin:0 0 0 0;
-	padding:10px 15px 10px 40px;
-	}
-.ideabig {
 	background:#fdebae url(images/shortcode/idea.png) no-repeat;background-position:7px 11px;
 	border:1px solid #e6c555;
 	color:#333333;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	margin:0 0 0 0;
+	margin:10px 0 10px 0;
 	padding:10px 15px 15px 45px;
 	}
 .gbutton
@@ -939,8 +904,11 @@ img.alignleft {
 display: inline-block;
 color:#fff;
 font-weight:bold;
-background : -webkit-gradient(linear, left top, left bottom, from(#88c841), to(#73b338));
-background : -moz-linear-gradient(center top, #88c841, #73b338);
+background-color: #88c841;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#88c841), to(#73b338));
+background-image: -moz-linear-gradient(center top, #88c841, #73b338);
+filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#88c841', endColorstr='#73b338'); /* IE6 & IE7 */
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#88c841', endColorstr='#73b338')"; /* IE8 */
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
@@ -951,8 +919,11 @@ cursor:pointer;
 }
 
 .gbutton:hover {
-background : -webkit-gradient(linear, left top, left bottom, from(#73b338), to(#88c841));
-background : -moz-linear-gradient(center top, #73b338, #88c841);
+background-color: #73b338;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#73b338), to(#88c841));
+background-image: -moz-linear-gradient(center top, #73b338, #88c841);
+filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#73b338', endColorstr='#88c841'); /* IE6 & IE7 */
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#73b338', endColorstr='#88c841')"; /* IE8 */
 text-decoration:none;
 }
 .bbutton
@@ -960,11 +931,17 @@ text-decoration:none;
 display: inline-block;
 color:#fff;
 font-weight:bold;
-background : -webkit-gradient(linear, left top, left bottom, from(#4181c8), to(#3866b3));
-background : -moz-linear-gradient(center top, #4181c8, #3866b3);
+background-color: #4181c8;
+background-image : -webkit-gradient(linear, left top, left bottom, from(#4181c8), to(#3866b3));
+background-image : -moz-linear-gradient(center top, #4181c8, #3866b3);
+filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4181c8', endColorstr='#3866b3'); /* IE6 & IE7 */
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4181c8', endColorstr='#3866b3')"; /* IE8 */
+border-radius: 5px;
+-ms-border-radius:  5px;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
-border-radius: 5px;
+-khtml-border-radius: 5px;
+-o-border-radius: 5px;
 padding: 5px 15px;
 text-align: center;
 -shadow: 0px 1px 0px #6c0909;
@@ -972,8 +949,12 @@ cursor:pointer;
 }
 
 .bbutton:hover {
-background : -webkit-gradient(linear, left top, left bottom, from(#3866b3), to(#4181c8));
-background : -moz-linear-gradient(center top, #3866b3, #4181c8);
+background-color: #3866b3;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#3866b3), to(#4181c8));
+background-image: -moz-linear-gradient(center top, #3866b3, #4181c8);
+filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3866b3', endColorstr='#4181c8'); /* IE6 & IE7 */
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3866b3', endColorstr='#4181c8')"; /* IE8 */
+behavior:url('border-radius.htc');
 text-decoration:none;
 }
 
@@ -981,3 +962,11 @@ a.gbutton {color:#fff !important;}
 a.bbutton {color:#fff !important;}
 
 .search-excerpt{color: #FC0;}
+
+/* ------- Fluid Columns ------- */
+.one_half{ width:48%; }
+.one_third{ width:30.66%; }
+.two_third{ width:65.33%; }
+.one_half,.one_third,.two_third{ position:relative; margin-right:4%; float:left; }
+.last{ margin-right:0 !important; clear:right; }
+.clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
