@@ -26,16 +26,20 @@ foreach ($options as $value) {
  	  <?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 		<h2 class="pagetitle"><?php _e('Blog Archives', 'BlueBubble') ?></h2>
  	  <?php } ?>
-
+    
+    <?php $posts=query_posts($query_string . '&posts_per_page=-1'); ?>
 	<?php if (have_posts()) : ?>
+
+<h2 class="pagetitle"><?php echo _e('Search Results for', 'BlueBubble') ?> <?php /* Search Count */ $allsearch = &new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; ''; '<span class="search-terms">'; echo $key; '</span>'; _e(': '); echo $count . ' '; _e('articles'); wp_reset_query(); ?></h2>
 
 		<?php while (have_posts()) : the_post(); ?>
 
 			<div class="postsingle" id="post-<?php the_ID(); ?>">
-							
-				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+
+<?php $title = get_the_title(); $keys= explode(" ",$s); $title = preg_replace('/('.implode('|', $keys) .')/iu', '<strong class="search-excerpt">\0</strong>', $title); ?>							
+<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php echo $title; ?></a></h1>
 				
-				<p class="postmetadata">by <?php the_author(); ?> on <?php the_time('l, j F Y') ?>  | <?php comments_popup_link(_e('No Comments &rarr;', 'BlueBubble'), _e('1 Comment &rarr;', 'BlueBubble'), _e('% Comments &rarr;', 'BlueBubble')); ?> | <?php the_tags(); ?> </p>
+				<p class="postmetadata">by <?php the_author(); ?> on <?php the_time('l, j F Y') ?>  | <?php comments_popup_link (__('No Comments', 'BlueBubble'), __('1 Comment', 'BlueBubble'), __('% Comments', 'BlueBubble')); ?> | <?php the_tags(); ?> </p>
 
 				
 				<div class="entry">

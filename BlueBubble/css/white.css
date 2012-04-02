@@ -21,25 +21,57 @@ a{
 	outline: none;
 	}
 
-.main-nav ul.main-nav li {
+.main-nav ul.main-nav  li, #widget li {
 	border-top: 1px solid #fff !important;
 	border-bottom: 1px solid #eee !important;
 }
 
-.main-nav ul.main-nav li a {
+.main-nav ul.main-nav li:first-child, #widget li:first-child{border-top: none !important;} 
+.main-nav ul.main-nav li:last-child, #widget li:last-child{border-bottom: none !important;}
+.main-nav ul.main-nav li a, #widget li a {
 	padding: 3px;
 	display: block;
 	color: #bbb !important;
 	text-decoration: none;
 }
-.main-nav ul.main-nav li a:hover {background: #eee !important;color:#999 !important;}
+.main-nav ul.main-nav  li a:hover, #widget li a:hover {background: #eee !important;color:#999 !important;}
 
-.main-nav ul.main-nav  li ul.sub-menu li {
+.main-nav ul.main-nav  li ul.sub-menu li, #widget li ul.sub-menu li  {
 	margin:0 0 0 10px;
 	border-left:1px solid #eee !important;
 	list-style-type:none;
 }
 
+/* LEGACY MENU STYLE - pre BlueBubble 3.0 */
+.main-nav ul.oldmenu {
+	margin:0px 0 15px 0;
+	padding:0;
+	display: block;
+	width:100%;
+	}
+
+.main-nav ul.oldmenu li {
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	list-style-type: none;
+	display: block;
+	width: 100%;
+	border-bottom: 1px dotted #eee !important;
+	}
+
+.main-nav ul.oldmenu li a {
+    color:#bbb !important;
+    display:block;
+    text-decoration:none;
+}
+
+.main-nav ul.oldmenu li a:hover {
+	color:#999 !important;
+	background-color: #eee !important;
+}
+
+/* container */
 #container {
 	width: 960px;
 	margin: 0 auto;
@@ -55,7 +87,39 @@ a{
   	height: 100px;
 	color: #fff; 
 	}
+
+/* Header Nav */
+.header-nav li a {
+	margin-right: 10px;
+	line-height:38px;
+	color: #ccc !important;
+	font-weight:bold;
+	padding: 2px 12px 3px 11px;
+	outline: none;
+	text-decoration: none;	
+    text-shadow: 1px 1px 2px #fff !important;
+}
+.header-nav li:hover > a
+{
+	margin-right: 10px;
+	line-height:38px;
+	color: #fff !important;
+	background:#ccc !important;
+	padding: 2px 12px 3px 11px;
+	outline: none;
+	text-decoration: none;	
+	text-shadow: none !important;
+	/* Border Radius */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 	
+	/* Border Shadow */
+	-webkit-box-shadow: 1px 1px 1px #fff !important;
+	-moz-box-shadow: -1px -1px 1px #202020, 1px 1px 1px #fff !important;
+	box-shadow: 1px 1px 1px #fff !important;
+}
+		
 #header h1 a{color: #404040 !important; text-decoration: none;}
 #header h1 a:hover{color: #666 !important; text-decoration: none;}
 
@@ -85,28 +149,28 @@ a{
 	background: url(../images/loader.gif) center center no-repeat;
 }	
 	
-.item h2 a, .postsingle h2 a {
+.item h2 a, .item-full h2 a, .postsingle h2 a {
 	color: #333333 !important;
 	text-decoration: none;
 	font-size:18px;
 	}
-.item h2 a:hover, .postsingle h2 a:hover {
+.item h2 a:hover, .item-full h2 a:hover, .postsingle h2 a:hover {
 	color: #777 !important;
 	text-decoration: none;
 	}
-.item h1, .postsingle h1 {
+.item h1, .item-full h1, .postsingle h1 {
 	font:bold;
 	line-height: 42px;
 	display: block;
 	border-bottom: 1px dotted #333333 !important;
 }
-.item h1, .postsingle h1 a {
+.item h1, .item-full h1, .postsingle h1 a {
 	color: #333333 !important;
 	text-decoration: none;
 	font-size: 26px;
 }
 	
-.item h1, .postsingle h1 a:hover {
+.item h1, .item-full h1, .postsingle h1 a:hover {
 	color: #777 !important;
 	text-decoration: none;
 }
@@ -180,6 +244,30 @@ ol.forms li.buttons button:active { padding: 3px;
 	padding: 0;
 	line-height: 20px;
 }
+/* NEW STYLES 3.3 */
+#recentcomments li.recentcomments{
+	padding: 3px;
+	display: block;
+	color: #bbb !important;
+	text-decoration: none;}
+
+#recentcomments li.recentcomments:hover{background: #eee !important;color:#999 !important;}
+#recentcomments li.recentcomments a {text-decoration:underline;color:#bbb !important;}
+
+#widget .screen-reader-text {
+	display:none;
+}
+
+#widget #searchform #s {
+	border: 1px solid #ccc !important;
+	color:#202020 !important;
+	width: 145px;
+	border-radius: 3px;
+	font: inherit;
+	padding: 2px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	}
 
 #commentform {
 	padding: 20px;

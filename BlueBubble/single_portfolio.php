@@ -22,7 +22,6 @@ foreach ($options as $value) {
 			
 				<h2><?php the_title(); ?><?php if (get_option('bb_no_tweet') == '') { ?><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo get_option('bb_twitter_name') ?>">Tweet</a>
 <?php } // Check for Tweet Button Off ?></h2>
-
 				<div class="entry">
 					<?php the_content (__('Read the rest of this entry &raquo;', 'BlueBubble')); ?>
 					

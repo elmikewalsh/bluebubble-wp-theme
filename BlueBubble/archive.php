@@ -36,8 +36,7 @@ foreach ($options as $value) {
 				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a><?php if (get_option('bb_no_tweet') == '') { ?><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo get_option('bb_twitter_name') ?>">Tweet</a>
 <?php } // Check for Tweet Button Off ?></h1>
 				
-				<p class="postmetadata">by <?php the_author_posts_link(); ?> on <?php the_time('l, j F Y') ?>  | <img src="<?php echo get_bloginfo('template_directory'); ?>/images/comments.png" alt="comments"> <?php comments_popup_link (__('No Comments', 'BlueBubble'), __('1 Comment', 'BlueBubble'), __('% Comments', 'BlueBubble')); ?> | <?php the_tags(); ?><?php the_title(); ?></a><?php if (get_option('bb_no_tweet') == '') { ?><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo get_option('bb_twitter_name') ?>">Tweet</a>
-<?php } // Check for Tweet Button Off ?></p>
+				<p class="postmetadata">by <?php the_author_posts_link(); ?> on <?php the_time('l, j F Y') ?>  | <img src="<?php echo get_bloginfo('template_directory'); ?>/images/comments.png" alt="comments"> <?php comments_popup_link (__('No Comments', 'BlueBubble'), __('1 Comment', 'BlueBubble'), __('% Comments', 'BlueBubble')); ?> | <?php the_tags(); ?><?php the_title(); ?></a></p>
 
 				
 				<div class="entry">

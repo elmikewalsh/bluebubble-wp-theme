@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Portfolio
+Template Name: Portfolio-Full
 */
 ?>
 
@@ -19,11 +19,7 @@ foreach ($options as $value) {
 }
 ?>
 
-    <?php if ( get_option('bb_right_sidebar') ) { ?>
-       <div id="content-left"> 
-       <?php }else{ ?>
-       <div id="content">
-	<?php } // End check for rightside menu ?>
+       <div id="content-full">
          
 	<?php if (have_posts()) : ?>
     
@@ -44,10 +40,10 @@ foreach ($options as $value) {
         <?php while (have_posts()) : the_post(); ?>
 
 
-            <div class="item" id="post-<?php the_ID(); ?>">
+            <div class="item-full" id="post-<?php the_ID(); ?>">
 
 				
-				<div class="box-new">
+				<div class="box">
 				<?php if ( get_option('bb_no_colorbox') ) { ?>
                 <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"> 
                 <?php }else{ ?>
@@ -86,5 +82,4 @@ foreach ($options as $value) {
 	</div>
 
 
-<?php get_sidebar('standard'); ?>
 <?php get_footer(); ?>

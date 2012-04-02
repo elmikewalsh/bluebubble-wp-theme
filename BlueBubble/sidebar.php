@@ -7,11 +7,14 @@ foreach ($options as $value) {
 ?>
 
 <div id="sidebar">
-	
-		<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'main-nav', 'menu_class' => 'main-nav', 'theme_location' => 'first-menu', 'depth' => '2' ) ); ?>
+             <?php if ( get_option('bb_old_menus') ) { ?>
+                <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'main-nav', 'menu_class' => 'oldmenu', 'theme_location' => 'first-menu', 'depth' => '2' ) ); ?> 
+                <?php }else{ ?>
+                <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'main-nav', 'menu_class' => 'main-nav', 'theme_location' => 'first-menu', 'depth' => '2' ) ); ?>
+			 <?php } // End check for old menu ?>
 	<br />
 		
-<hr class="divider" />	
+
 	<?php 	/* Widgetized sidebar */
 		if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 					
@@ -23,6 +26,7 @@ foreach ($options as $value) {
 <br />
 <?php _e('You can place a widget here to remove the text above.', 'BlueBubble') ?>
 <?php endif; ?>
+
 
 <?php if (get_option('bb_twitter') ) { ?>  
 <hr class="divider" />

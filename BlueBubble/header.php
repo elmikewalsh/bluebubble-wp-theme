@@ -17,8 +17,6 @@
 
 <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/style.css" />
 <?php if ( get_option('bb_color_scheme') != ('light gray (default)') ) { ?><link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/css/<?php echo get_option('bb_color_scheme'); ?>.css" /><?php } // Check for non-Default ?>
-<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_url'); ?>/scripts/colorbox.css" />
-
 
 <!-- ** Javascript ** -->
 
@@ -30,7 +28,8 @@
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/contact-form.js"></script>
 <?php if (get_option('bb_no_tweet') == '') { ?><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 <?php } // Check for Tweet Button Off ?>
-<?php if (get_option('bb_no_colorbox') == '') { ?><script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/jquery.colorbox-min.js"></script>
+<?php if (get_option('bb_no_colorbox') == '') { ?><link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_url'); ?>/scripts/colorbox.css" />
+<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/jquery.colorbox-min.js"></script>
 		<script>
 			$(document).ready(function(){
 				//Examples of how to assign the ColorBox event to elements
@@ -41,7 +40,7 @@
 
 <!-- ** Links ** -->
 
-<link rel="shortcut icon" href="<?php echo get_option('bb_favicon'); ?>"/>
+<link rel="shortcut icon" href="<?php echo get_option('bb_favicon'); ?>" type="image/x-icon"/>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -60,7 +59,16 @@ foreach ($options as $value) {
 <div id="container">
 
 
-<div id="header">
+<div id="header"><div class="topmenu-left">
+             <?php if ( get_option('bb_top_menu') ) { ?>
+                <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'header-nav', 'theme_location' => 'fourth-menu', 'depth' => '1' ) ); ?>
+			 <?php } // End check for old menu ?>
+
+
+</div> <!-- END .topmenu -->
+<div class="logo">
 		<a class="homelink" title="<?php echo bloginfo('blog_name'); ?>" href="<?php echo get_option('home'); ?>/"><img class="logotype" alt="logo" src="<?php echo $bb_logo; ?>" /></a>
+</div> <!-- END .logo -->
+
 </div> <!-- END #header -->
 

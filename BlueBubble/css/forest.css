@@ -21,26 +21,57 @@ a{
 	outline: none;
 	}
 
-.main-nav ul.main-nav li {
+.main-nav ul.main-nav  li, #widget li {
 	border-top: 1px solid #545a3b !important;
 	border-bottom: 1px solid #333724 !important;
 }
 
-.main-nav ul.main-nav li:first-child {border-top: none;}
-.main-nav ul.main-nav li:last-child {border-bottom: none;}
-.main-nav ul.main-nav li a {
+.main-nav ul.main-nav li:first-child, #widget li:first-child{border-top: none !important;} 
+.main-nav ul.main-nav li:last-child, #widget li:last-child{border-bottom: none !important;}
+.main-nav ul.main-nav li a, #widget li a {
 	padding: 3px;
 	display: block;
 	color: #eee !important;
 	text-decoration: none;
 }
-.main-nav ul.main-nav li a:hover {background: #333724 !important;color:#ccc !important;}
+.main-nav ul.main-nav  li a:hover, #widget li a:hover {background: #333724 !important;color:#ccc !important;}
 
-.main-nav ul.main-nav  li ul.sub-menu li {
+.main-nav ul.main-nav  li ul.sub-menu li, #widget li ul.sub-menu li  {
 	margin:0 0 0 10px;
 	border-left:1px solid #333724 !important;
 	list-style-type:none;
 }
+
+/* LEGACY MENU STYLE - pre BlueBubble 3.0 */
+.main-nav ul.oldmenu {
+	margin:0px 0 15px 0;
+	padding:0;
+	display: block;
+	width:100%;
+	}
+
+.main-nav ul.oldmenu li {
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	list-style-type: none;
+	display: block;
+	width: 100%;
+	border-bottom: 1px dotted #333724 !important;
+	}
+
+.main-nav ul.oldmenu li a {
+    color:#eee !important;
+    display:block;
+    text-decoration:none;
+}
+
+.main-nav ul.oldmenu li a:hover {
+	color:#ccc !important;
+	background-color: #333724 !important;
+}
+
+/* container */
 
 #container {
 	width: 960px;
@@ -57,7 +88,39 @@ a{
   	height: 100px;
 	color: #fff; 
 	}
-/*CONTINUE EDITS BELOW*/	
+
+/* Header Nav */
+.header-nav li a {
+	margin-right: 10px;
+	line-height:38px;
+	color: #2b2f1c !important;
+	font-weight:bold;
+	padding: 2px 12px 3px 11px;
+	outline: none;
+	text-decoration: none;	
+    text-shadow: 1px 1px 2px #5c6149 !important;
+}
+.header-nav li:hover > a
+{
+	margin-right: 10px;
+	line-height:38px;
+	color: #fff !important;
+	background:#2b2f1c !important;
+	padding: 2px 12px 3px 11px;
+	outline: none;
+	text-decoration: none;	
+	text-shadow: none !important;
+	/* Border Radius */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	/* Border Shadow */
+	-webkit-box-shadow: 1px 1px 1px #5c6149 !important;
+	-moz-box-shadow: -1px -1px 1px #202020, 1px 1px 1px #5c6149 !important;
+	box-shadow: 1px 1px 1px #5c6149 !important;
+}
+	
 #header h1 a{color: #fff !important; text-decoration: none;}
 #header h1 a:hover{color: #ccc !important; text-decoration: none;}
 
@@ -69,46 +132,48 @@ a{
 	margin:0;	
 	}
 
+.box {
+	width: 312px;
+	height: 152px;
+	padding:4px;
+	margin-bottom: 10px;
+	background:#ccc url('images/loader.gif') center center no-repeat;
+	border:1px solid #999;
+}
+.box:hover{background:#bbb;}
+
 .box a img{
-	border: 1px solid #333724 !important;
+	border: 1px solid #707070;
 }
 
 .box a:hover img{
-	border: 1px solid #788155 !important;
-	-moz-box-shadow:0 0 5px #000;
-	-webkit-box-shadow:0 0 5px #000;
-}
-
-.boxsingle {
-	width: 657px;
-	height: 318px;
-	border: 1px solid #333724 !important;
-	margin-bottom: 10px;
-	background: url(../images/loader.gif) center center no-repeat;
+	border: 1px solid #505050;
+	-moz-box-shadow:0 0 2px #202020;
+	-webkit-box-shadow:0 0 2px #202020;
 }	
 	
-.item h2 a, .postsingle h2 a {
+.item h2 a, .item-full h2 a, .postsingle h2 a {
 	color: #fff !important;
 	text-decoration: none;
 	font-size:18px;
 	}
-.item h2 a:hover, .postsingle h2 a:hover {
+.item h2 a:hover, .item-full h2 a:hover, .postsingle h2 a:hover {
 	color: #ccc !important;
 	text-decoration: none;
 	}
-.item h1, .postsingle h1 {
+.item h1, .item-full h1, .postsingle h1 {
 	font:bold;
 	line-height: 42px;
 	display: block;
 	border-bottom: 1px dotted #fff !important;
 }
-.item h1, .postsingle h1 a {
+.item h1, .item-full h1, .postsingle h1 a {
 	color: #fff !important;
 	text-decoration: none;
 	font-size: 26px;
 }
 	
-.item h1, .postsingle h1 a:hover {
+.item h1, .item-full h1, .postsingle h1 a:hover {
 	color: #ccc !important;
 	text-decoration: none;
 }
@@ -179,6 +244,30 @@ ol.forms li.buttons button:hover {
 	padding: 0;
 	line-height: 20px;
 }
+/* NEW STYLES 3.3 */
+#recentcomments li.recentcomments{
+	padding: 3px;
+	display: block;
+	color: #eee !important;
+	text-decoration: none;}
+
+#recentcomments li.recentcomments:hover{background: #333724 !important;color:#ccc !important;}
+#recentcomments li.recentcomments a {text-decoration:underline;color:#ccc !important;}
+
+#widget .screen-reader-text {
+	display:none;
+}
+
+#widget #searchform #s {
+	border: 1px solid #ccc !important;
+	color:#202020 !important;
+	width: 145px;
+	border-radius: 3px;
+	font: inherit;
+	padding: 2px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	}
 
 #commentform {
 	padding: 20px;
