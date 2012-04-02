@@ -57,7 +57,7 @@ foreach ($options as $value) {
 				
 				<div class="entry">
 					<p><?php echo substr(strip_tags($post->post_content), 0, 120); ?>... <a href="<?php the_permalink(); ?>">
-					Details</a></p>
+					<?php _e('Details', 'BlueBubble') ?></a></p>
 				</div>
 
 			</div>
@@ -66,14 +66,14 @@ foreach ($options as $value) {
 
 		<!-- if you set portfolio.php as the homepage via wp-admin the pagintaion doesnt't work. -->
 		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&larr; Older Entries') ?></div>
-			<div class="alignright"><?php previous_posts_link('Newer Entries &rarr;') ?></div>
+			<div class="alignleft"><?php next_posts_link (__('&larr; Older Entries', 'BlueBubble')) ?></div>
+			<div class="alignright"><?php previous_posts_link (__('Newer Entries &rarr;', 'BlueBubble')) ?></div>
 		</div>
 
 	<?php else : ?>
 
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+		<h2 class="center"><?php _e('Not Found', 'BlueBubble') ?></h2>
+		<p class="center"><?php _e('Sorry, but you are looking for something that is not here.', 'BlueBubble') ?></p>
 		
 
 	<?php endif; ?>

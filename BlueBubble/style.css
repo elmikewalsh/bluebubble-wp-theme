@@ -4,10 +4,11 @@ Theme URI: http://themes.imaginalgo.com/bluebubble/
 Alternate Theme URI: http://www.thomasveit.com/bluebubble-free-premium-wordpress-portfolio-theme/
 Github Theme URI: https://github.com/imaginalgo/bluebubble-wp-theme/
 Description: Minimal &amp; Elegant Portfolio Theme - Wordpress 3.0 ready
-Version: v3.1.1
+Version: v3.2
 Author: Thomas Veit (WP 3.0 updates by Mike Walsh)
 Author URI: http://themes.imaginalgo.com/
 Updates Author URI: http://www.imaginalgo.com
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style+
 
 The CSS, XHTML and design is released under GPL:
 http://www.opensource.org/licenses/gpl-3.0.html
@@ -687,6 +688,119 @@ img.alignleft {
    margin: 0;
 }
 
+/* Shortcodes CSS */
 
-/* 404 Error Page Styles */
+.alert {
+	background:#ffcccc url(images/shortcode/alert16.png) no-repeat;background-position:12px 12px;
+	border:1px solid #ff9999;
+	color:#333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin:20px 0 20px 0;
+	padding:10px 15px 10px 40px;
+	}
+.alertbig {
+	background:#ffcccc url(images/shortcode/alert.png) no-repeat;background-position:7px 4px;
+	border:1px solid #ff9999;
+	color:#333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin:20px 0 20px 0;
+	padding:10px 15px 10px 45px;
+	}
+.dload {
+	background:#dee3ab url(images/shortcode/download16.png) no-repeat;background-position:12px 12px;
+	border:1px solid #a3c159;
+	color:#333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin:20px 0 20px 0;
+	padding:10px 15px 10px 40px;
+	}
+.dloadbig {
+	background:#dee3ab url(images/shortcode/download.png) no-repeat;background-position:7px 4px;
+	border:1px solid #a3c159;
+	color:#333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin:20px 0 20px 0;
+	padding:10px 15px 10px 45px;
+	}
+.info {
+	background:#bfe4f9 url(images/shortcode/info16.png) no-repeat;background-position:13px 13px;
+	border:1px solid #68a2cf;
+	color:#333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin:20px 0 20px 0;
+	padding:10px 15px 10px 40px;
+	}
+.infobig {
+	background:#bfe4f9 url(images/shortcode/info.png) no-repeat;background-position:7px 5px;
+	border:1px solid #68a2cf;
+	color:#333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin:20px 0 20px 0;
+	padding:10px 15px 10px 45px;
+	}
+.idea {
+	background:#fdebae url(images/shortcode/idea16.png) no-repeat;background-position:13px 13px;
+	border:1px solid #e6c555;
+	color:#333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin:20px 0 20px 0;
+	padding:10px 15px 10px 40px;
+	}
+.ideabig {
+	background:#fdebae url(images/shortcode/idea.png) no-repeat;background-position:7px 5px;
+	border:1px solid #e6c555;
+	color:#333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin:20px 0 20px 0;
+	padding:10px 15px 10px 45px;
+	}
+.gbutton
+{
+display: inline-block;
+color:#fff;
+font-weight:bold;
+background : -webkit-gradient(linear, left top, left bottom, from(#88c841), to(#73b338));
+background : -moz-linear-gradient(center top, #88c841, #73b338);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding: 5px 15px;
+text-align: center;
+-shadow: 0px 1px 0px #6c0909;
+cursor:pointer;
+}
 
+.gbutton:hover {
+background : -webkit-gradient(linear, left top, left bottom, from(#73b338), to(#88c841));
+background : -moz-linear-gradient(center top, #73b338, #88c841);
+text-decoration:none;
+}
+.bbutton
+{
+display: inline-block;
+color:#fff;
+font-weight:bold;
+background : -webkit-gradient(linear, left top, left bottom, from(#4181c8), to(#3866b3));
+background : -moz-linear-gradient(center top, #4181c8, #3866b3);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding: 5px 15px;
+text-align: center;
+-shadow: 0px 1px 0px #6c0909;
+cursor:pointer;
+}
+
+.bbutton:hover {
+background : -webkit-gradient(linear, left top, left bottom, from(#3866b3), to(#4181c8));
+background : -moz-linear-gradient(center top, #3866b3, #4181c8);
+text-decoration:none;
+}

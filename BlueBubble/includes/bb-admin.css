@@ -112,3 +112,20 @@
 .rm_table th, .rm_table td.feature{
 	border-color:#888;
 	}
+	
+	
+/* Admin Update Bar Style */
+.wrap .updated, .wrap .error {
+margin:5px 0 15px !important;
+}
+.error, .login #login_error {
+background:#dde3e9 !important;
+border-color:#c3cfdc !important;
+}
+.updated, .error {
+-moz-border-radius:3px 3px 3px 3px;
+border-style:solid;
+border-width:1px;
+margin:5px 15px 2px;
+padding:0 0.6em;
+}

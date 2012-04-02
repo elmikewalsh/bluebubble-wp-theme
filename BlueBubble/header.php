@@ -28,7 +28,8 @@
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/js.js"></script>
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/contact-form.js"></script>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<?php if (get_option('bb_no_tweet') == '') { ?><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<?php } // Check for Tweet Button Off ?>
 <?php if (get_option('bb_no_colorbox') == '') { ?><script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/jquery.colorbox-min.js"></script>
 		<script>
 			$(document).ready(function(){

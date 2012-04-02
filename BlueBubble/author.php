@@ -30,12 +30,12 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 						<img src="<?php bloginfo('template_directory') ?>/images/authors/<?php the_author_ID()?>.jpg" alt="<?php the_author(); ?>" title="<?php the_author(); ?>" />
 						</div><!-- #author-avatar -->
 						<div id="author-description">
-							<h2><?php printf( __( 'About %s', 'twentyten' ), get_the_author() ); ?></h2>
+							<h2><?php printf( __( 'About %s', 'BlueBubble' ), get_the_author() ); ?></h2>
 							<p><?php the_author_meta( 'description' ); ?></p><br />
-<h2>Contact <?php the_author_meta( 'nickname' ); ?></h2>
+<h2><?php _e('Contact', 'BlueBubble') ?> <?php the_author_meta( 'nickname' ); ?></h2>
 
     <?php if ( get_the_author_meta( 'phone' ) ) { ?>
-    <p>Phone: <?php the_author_meta( 'phone' ); ?></p>
+    <p><?php _e('Phone', 'BlueBubble') ?>: <?php the_author_meta( 'phone' ); ?></p>
     <?php } // End check for Phone ?>
 
     <?php if ( get_the_author_meta( 'skype' ) ) { ?>   
@@ -43,7 +43,7 @@ if ( get_the_author_meta( 'description' ) ) : ?>
     <?php } // End check for Skype ?> 
     
     <?php if ( get_the_author_meta( 'user_url' ) ) { ?>
-    <p>Website: <a href="<?php the_author_meta( 'user_url' ); ?>" target="_blank"><?php the_author_meta( 'user_url' ); ?></a></p>
+    <p><?php _e('Website', 'BlueBubble') ?>: <a href="<?php the_author_meta( 'user_url' ); ?>" target="_blank"><?php the_author_meta( 'user_url' ); ?></a></p>
     <?php } // End check for Website ?>
    
 	<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
@@ -81,19 +81,19 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 
 <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
  	  <?php /* If this is a category archive */ if (is_category()) { ?>
-		<h2 class="pagetitle">Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h2>
+		<h2 class="pagetitle"><?php _e('Archive for the', 'BlueBubble') ?> &#8216;<?php single_cat_title(); ?>&#8217; <?php _e('Category', 'BlueBubble') ?></h2>
  	  <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-		<h2 class="pagetitle">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2>
+		<h2 class="pagetitle"><?php _e('Posts Tagged', 'BlueBubble') ?> &#8216;<?php single_tag_title(); ?>&#8217;</h2>
  	  <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-		<h2 class="pagetitle">Archive for <?php the_time('F jS, Y'); ?></h2>
+		<h2 class="pagetitle"><?php _e('Archive for', 'BlueBubble') ?> <?php the_time('F jS, Y'); ?></h2>
  	  <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-		<h2 class="pagetitle">Archive for <?php the_time('F, Y'); ?></h2>
+		<h2 class="pagetitle"><?php _e('Archive for', 'BlueBubble') ?> <?php the_time('F, Y'); ?></h2>
  	  <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-		<h2 class="pagetitle">Archive for <?php the_time('Y'); ?></h2>
+		<h2 class="pagetitle"><?php _e('Archive for', 'BlueBubble') ?> <?php the_time('Y'); ?></h2>
 	  <?php /* If this is an author archive */ } elseif (is_author()) { ?>
-		<h1 class="pagetitle">Author Posts</h1><br />
+		<h2 class="pagetitle"><?php _e('Author Archive', 'BlueBubble') ?></h2>
  	  <?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-		<h2 class="pagetitle">Blog Archives</h2><br />
+		<h2 class="pagetitle"><?php _e('Blog Archives', 'BlueBubble') ?></h2>
  	  <?php } ?>
 
 	<?php if (have_posts()) : ?>
@@ -104,11 +104,11 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 							
 				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				
-				<p class="postmetadata">by <?php the_author_posts_link(); ?> on <?php the_time('l, F jS, Y') ?>  | <img src="<?php echo get_bloginfo('template_directory'); ?>/images/comments.png" alt="comments"> <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?> | <?php the_tags(); ?> </p>
+				<p class="postmetadata"><?php _e('by', 'BlueBubble') ?> <?php the_author_posts_link(); ?> <?php _e('on', 'BlueBubble') ?> <?php the_time('l, j F Y') ?>  | <img src="<?php echo get_bloginfo('template_directory'); ?>/images/comments.png" alt="comments"> <?php comments_popup_link (__('No Comments', 'BlueBubble'), __('1 Comment', 'BlueBubble'), __('% Comments', 'BlueBubble')); ?> | <?php the_tags(); ?> </p>
 
 				
 				<div class="entry">
-					<?php the_content('Read the rest of this entry &raquo;'); ?>
+					<?php the_content (_e('Read the rest of this entry &raquo;', 'BlueBubble')); ?>
 				</div>
 				
 				
@@ -125,13 +125,13 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 
 	<?php else : ?>
 
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+		<h2 class="center"><?php _e('Not Found', 'BlueBubble') ?></h2>
+		<p class="center"><?php _e('Sorry, but you are looking for something that is not here.', 'BlueBubble') ?></p>
 		
 
 	<?php endif; ?>
 
 	</div>
 
-<?php get_sidebar('blog'); ?>
+<?php get_sidebar('standard'); ?>
 <?php get_footer(); ?>

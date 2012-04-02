@@ -1,5 +1,14 @@
 <?php
 
+
+// Make theme available for translation
+// Translations can be filed in the /languages/ directory
+load_theme_textdomain( 'BlueBubble', TEMPLATEPATH . '/languages' );
+
+// Check for New Versions
+ include("theme-updates.php");
+
+
 /*Sidebar Widget*/
 
 if ( function_exists('register_sidebar') )
@@ -39,37 +48,11 @@ function register_my_menus() {
 
 /* Remove Wordpress Ver. Number from HTML - For Security Reasons */
 
-function wpbeginner_remove_version() {
+function bb_remove_version() {
 return '';
 }
-add_filter('the_generator', 'wpbeginner_remove_version');
+add_filter('the_generator', 'bb_remove_version');
 
-
-
-/* Tweet This Post Links
-
-if(!function_exists('dd_tiny_tweet_init')){
- 
-	function dd_tiny_tweet_init($content){
-		//Thanks to http://briancray.com for the one line $tiny_tweet_url solution. 
-		$tiny_tweet_url = file_get_contents('http://tinyurl.com/api-create.php?url=' . urlencode('http://' . $_SERVER['HTTP_HOST']  . '/' . $_SERVER['REQUEST_URI']));
-		//Grab the title of the current post
-		$tiny_tweet_title = get_the_title();
-		//Reduce title to 100 characters
-		$tiny_tweet_title = substr($tiny_tweet_title, 0,100);
-		//Append an ellipsis to the end
-		$tiny_tweet_title .='...';
-		//Set up the status and url to send to twitter
-		$tiny_tweet_status_url = 'http://twitter.com/home?status=Currently reading "'.$tiny_tweet_title."\" ".$tiny_tweet_url;
-		//If the current page is an individual article, promote it with a Twitter link!
-		if(is_single()){
-			$content .=  '<div class=\'tiny_tweet\'>Have Twitter? <a href=\''.$tiny_tweet_status_url.'\' target="_blank">Tweet this post!</a></div>';
-		}
-	return $content;
-  }
-  add_filter('the_content', 'dd_tiny_tweet_init');
- 
-}*/
 
 
 /* Add Custom User Profile Fields*/
@@ -78,7 +61,7 @@ if(!function_exists('dd_tiny_tweet_init')){
 	function add_contactmethod( $contactmethods ) {
 
 		// Add Telephone
-	    $contactmethods['phone'] = 'Phone';
+	    $contactmethods['phone'] = (__('Phone', 'BlueBubble'));
 		
 		// Add Facebook
 	    $contactmethods['facebook'] = 'Facebook';
@@ -108,8 +91,8 @@ $meta_boxes =
 			"name" => "post_image",
 			"type" => "text",
 			"std" => "",
-			"title" => "Image",
-			"description" => "Using the \"<em>Add an Image</em>\" button, upload an image and paste the URL here.")
+			"title" => _("Image"),
+			"description" => __("Using the \"<em>Add an Image</em>\" button, upload an image and paste the URL here.", 'BlueBubble'))
 	);
 
 
@@ -145,8 +128,52 @@ function meta_boxes() {
 }
 
 
+/* Shortcodes */
+	function alert($atts, $content = null) {
+	    return '<div class="alert">'.$content.'</div>';}
+    add_shortcode('alert', 'alert');
+	function alertbig($atts, $content = null) {
+	    return '<div class="alertbig">'.$content.'</div>';}
+    add_shortcode('alertbig', 'alertbig');
+	function dload($atts, $content = null) {
+	    return '<div class="download">'.$content.'</div>';}
+    add_shortcode('dload', 'dload');
+	function dloadbig($atts, $content = null) {
+	    return '<div class="dloadbig">'.$content.'</div>';}
+    add_shortcode('dloadbig', 'dloadbig');
+	function info($atts, $content = null) {
+	    return '<div class="info">'.$content.'</div>';}
+    add_shortcode('info', 'info');
+	function infobig($atts, $content = null) {
+	    return '<div class="infobig">'.$content.'</div>';}
+    add_shortcode('infobig', 'infobig');
+	function idea($atts, $content = null) {
+	    return '<div class="idea">'.$content.'</div>';}
+    add_shortcode('idea', 'idea');
+	function ideabig($atts, $content = null) {
+	    return '<div class="ideabig">'.$content.'</div>';}
+    add_shortcode('ideabig', 'ideabig');
+
+function gbutton($atts, $content = null) {
+	extract(shortcode_atts(array(
+		"url" => ''
+	), $atts));
+	return '<a class="gbutton" href="'.$url.'">'.$content.'</a>';
+}
+add_shortcode('gbutton', 'gbutton');
 
 
+function bbutton($atts, $content = null) {
+	extract(shortcode_atts(array(
+		"url" => ''
+	), $atts));
+	return '<a class="bbutton" href="'.$url.'">'.$content.'</a>';
+}
+add_shortcode('bbutton', 'bbutton');
+
+
+/* Allows Shortcodes in Sidebars */
+add_filter('widget_text', 'do_shortcode');
 
 
 /*Start of Theme Options*/
@@ -159,52 +186,57 @@ $wp_cats = array();
 foreach ($categories as $category_list ) {
        $wp_cats[$category_list->cat_ID] = $category_list->cat_name;
 }
-array_unshift($wp_cats, "Choose a category"); 
+array_unshift($wp_cats,_("Choose a category")); 
 
 $options = array (
 
 array( "name" => $themename." Options",
 	"type" => "title"),
 
-array( "name" => "General",
+array( "name" => __("General", 'BlueBubble'),
 	"type" => "section"),
 array( "type" => "open"),
  
-array( "name" => "Color Scheme",
-	"desc" => "Choose a color scheme for the website.",
+array( "name" => __("Color Scheme", 'BlueBubble'),
+	"desc" => __("Choose a color scheme for the website.", 'BlueBubble'),
 	"id" => $shortname."_color_scheme",
 	"type" => "select",
-	"options" => array("light gray (default)", "white", "lime", "forest", "red", "blue", "coffee", "black"),
-	"std" => "white (default)"),
+	"options" => array( __("light gray (default)", 'BlueBubble'), __("white", 'BlueBubble'), __("lime", 'BlueBubble'), __("forest", 'BlueBubble'), __("red", 'BlueBubble'), __("blue", 'BlueBubble'), __("coffee", 'BlueBubble'), __("black", 'BlueBubble')),
+	"std" =>__("light gray (default)", 'BlueBubble')),
 
-array( "name" => "Show Twitter Stream?",
-	"desc" => "Check if you want to show Twitter your stream. It will appear in the left sidebar above <strong>Other ways to reach me: </strong> (you must indicate your Twitter username in the next field)",
+array( "name" => __("Show Twitter Stream?", 'BlueBubble'),
+	"desc" => __("Check if you want to show Twitter your stream. It will appear in the left sidebar above <strong>Other ways to reach me: </strong> (you must indicate your Twitter username in the next field)", 'BlueBubble'),
 	"id" => $shortname."_twitter",
 	"type" => "checkbox",
 	"std" => ""),
 
-	
-array( "name" => "Twitter Username",
-	"desc" => "Enter your Twitter username. In addition to the Twitter stream, your username will be used with the <strong>Tweet Button</strong> located on most pages. (you must check the box in the field above for your Twitter stream to show)",
+array( "name" => __("Hide Tweet Buttons?", 'BlueBubble'),
+	"desc" => __("Check if you want to hide the Twitter <strong>Tweet</strong> buttons that appear on posts and pages. (The buttons appear by default)", 'BlueBubble'),
+	"id" => $shortname."_no_tweet",
+	"type" => "checkbox",
+	"std" => ""),
+
+array( "name" => __("Twitter Username", 'BlueBubble'),
+	"desc" => __("Enter your Twitter username. In addition to the Twitter stream, your username will be used with the <strong>Tweet Button</strong> located on most pages. (you must check the box in the field above for your Twitter stream to show)", 'BlueBubble'),
 	"id" => $shortname."_twitter_name",
 	"type" => "text",
 	"std" => ""),
 	
 // Menu Option for Num. of Twitter Feeds 
-array( "name" => "Number of Twitter Feeds",
-	"desc" => "How many Twitter entries do you want to show? (default is 2; more than 5 is not recommended)",
+array( "name" => __("Number of Twitter Feeds", 'BlueBubble'),
+	"desc" => __("How many Twitter entries do you want to show? (default is 2; more than 5 is not recommended)", 'BlueBubble'),
 	"id" => $shortname."_twitter_num",
 	"type" => "text",
 	"std" => ""),
 
-array( "name" => "Feedburner URL",
-	"desc" => "Feedburner is a Google service that takes care of your RSS feed. Paste your Feedburner URL here to let readers see it in your website",
+array( "name" => __("Feedburner URL", 'BlueBubble'),
+	"desc" => __("Feedburner is a Google service that takes care of your RSS feed. Paste your Feedburner URL here to let readers see it in your website", 'BlueBubble'),
 	"id" => $shortname."_feedburner",
 	"type" => "text",
 	"std" => get_bloginfo('rss2_url')),
 	
-array( "name" => "Custom CSS",
-	"desc" => "Place here any custom CSS you might need. (Note: This overrides any other stylesheets)",
+array( "name" => __("Custom CSS", 'BlueBubble'),
+	"desc" => __("Place here any custom CSS you might need. (Note: This overrides any other stylesheets)", 'BlueBubble'),
 	"id" => $shortname."_custom_css",
 	"type" => "textarea",
 	"std" => ""),		
@@ -213,44 +245,44 @@ array( "type" => "close"),
 
 
 
-array( "name" => "Portfolio, Blog and Comments",
+array( "name" => __("Portfolio, Blog and Comments", 'BlueBubble'),
 	"type" => "section"),	
 array( "type" => "open"),
 	
-array( "name" => "Portfolio Category",
-	"desc" => "Enter the name of the Portfolio category. (you must create categories before they will show up in the list.)",
+array( "name" => __("Portfolio Category", 'BlueBubble'),
+	"desc" => __("Enter the name of the Portfolio category. (you must create categories before they will show up in the list.)", 'BlueBubble'),
 	"id" => $shortname."_portfolio_cat",
 	"type" => "select",
 	"options" => $wp_cats,
-	"std" => "Choose a category for your portfolio."),
+	"std" => __("Choose a category for your portfolio.", 'BlueBubble')),
 
-array( "name" => "Portfolio Items Per Page",
-	"desc" => "How many portfolio items do you want to show on each page? (default is 6)",
+array( "name" => __("Portfolio Items Per Page", 'BlueBubble'),
+	"desc" => __("How many portfolio items do you want to show on each page? (default is 6)", 'BlueBubble'),
 	"id" => $shortname."_portfolio_num",
 	"type" => "text",
 	"std" => ""),
 
-array( "name" => "Turn Off Lightbox?",
-	"desc" => "Check if you want to <strong>turn off</strong> the Colorbox popup that appears when clicking an image on your portfolio page. (if turned off, clicking the image will take you to the single portfolio page with the larger image)",
+array( "name" => __("Turn Off Lightbox?", 'BlueBubble'),
+	"desc" => __("Check if you want to <strong>turn off</strong> the Colorbox popup that appears when clicking an image on your portfolio page. (if turned off, clicking the image will take you to the single portfolio page with the larger image)", 'BlueBubble'),
 	"id" => $shortname."_no_colorbox",
 	"type" => "checkbox",
 	"std" => ""),
 	
-array( "name" => "Blog Parent Category",
-	"desc" => "Enter the name of the Portfolio category. (you must create categories before they will show up in the list.)",
+array( "name" => __("Blog Parent Category", 'BlueBubble'),
+	"desc" => __("Enter the name of the Portfolio category. (you must create categories before they will show up in the list.)", 'BlueBubble'),
 	"id" => $shortname."_blog_cat",
 	"type" => "select",
 	"options" => $wp_cats,
-	"std" => "Choose a category for your blog."),
+	"std" => __("Choose a category for your blog.", 'BlueBubble')),
 
-array( "name" => "Oldest Posts First?",
-	"desc" => "BlueBubble 3.0 normally displays posts from newest to oldest. Check if you want to show oldest posts first. (Note: This will only change blog posts, not portfolio posts order)",
+array( "name" => __("Oldest Posts First?", 'BlueBubble'),
+	"desc" => __("BlueBubble 3.0 normally displays posts from newest to oldest. Check if you want to show oldest posts first. (Note: This will only change blog posts, not portfolio posts order)", 'BlueBubble'),
 	"id" => $shortname."_post_order",
 	"type" => "checkbox",
 	"std" => ""),
 
-array( "name" => "Comments disable?",
-	"desc" => "Check if you want to disable comments on portfolio items.",
+array( "name" => __("Comments disable?", 'BlueBubble'),
+	"desc" => __("Check if you want to disable comments on portfolio items.", 'BlueBubble'),
 	"id" => $shortname."_comments",
 	"type" => "checkbox",
 	"std" => ""),
@@ -259,25 +291,24 @@ array( "type" => "close"),
 
 
 
-array( "name" => "Header, Footer and Icons",
+array( "name" => __("Header, Footer and Icons", 'BlueBubble'),
 	"type" => "section"),
 array( "type" => "open"),
 
-array( "name" => "Logo",
-	"desc" => "Enter full path to your Logo.<br /><strong>Ideal size is 192x77.</strong><br />
-Example: http://www.yoursite.com/wp-content/uploads/logo.png" ,
+array( "name" => __("Logo", 'BlueBubble'),
+	"desc" => __("Enter the full path to your logo.<br /><strong>Ideal size is 192 x 77.</strong>", 'BlueBubble'),
 	"id" => $shortname."_logo",
 	"type" => "text",
 	"std" => get_bloginfo('template_directory') ."/images/logo.png"),		
-	
-array( "name" => "Custom Favicon",
-	"desc" => "A favicon is the 16x16 pixel icon that appears in the address bar of most browsers and represents your site; Upload a favicon to Wordpress, then paste the URL to the image that you want to use. (Note: Image should be in .ico format)",
+
+array( "name" => __("Custom Favicon", 'BlueBubble'),
+	"desc" => __("A favicon is the 16x16 pixel icon that appears in the address bar of most browsers and represents your site; Upload a favicon to Wordpress, then paste the URL to the image that you want to use. (Note: Image should be in .ico format)", 'BlueBubble'),
 	"id" => $shortname."_favicon",
 	"type" => "text",
 	"std" => get_bloginfo('url') ."/images/favicon.ico"),
 
-array( "name" => "Footer copyright text",
-	"desc" => "Enter text used in the right side of the footer. It can be HTML.",
+array( "name" => __("Footer copyright text", 'BlueBubble'),
+	"desc" => __("Enter text used in the left side of the footer. It can be HTML.", 'BlueBubble'),
 	"id" => $shortname."_footer_text",
 	"type" => "textarea",
 	"std" => ""),
@@ -286,116 +317,122 @@ array( "type" => "close"),
 
 
 
-array( "name" => "Contact Form and Social",
+array( "name" => __("Contact Form and Social Icons", 'BlueBubble'),
 	"type" => "section"),	
 array( "type" => "open"),
 
 	
-array( "name" => "Contact Form Email Address",
-	"desc" => "Where do you want the emails from the contact form to arrive? Place that email address here. (if no email address is entered, email will automatically be sent to the administrator email address)",
+array( "name" => __("Contact Form Email Address", 'BlueBubble'),
+	"desc" => __("Where do you want the emails from the contact form to arrive? Place that email address here. (if no email address is entered, email will automatically be sent to the administrator email address)", 'BlueBubble'),
 	"id" => $shortname."_contact_email",
 	"type" => "text",
 	"std" => ""),
 
-array( "name" => "Show Social Sites Section",
-	"desc" => "Check if you want to show links to sites such as Facebook, Twitter, etc. It will appear in the left sidebar with the header <strong>Other ways to reach me: </strong>",
+array( "name" => __("Show Social Sites Section", 'BlueBubble'),
+	"desc" => __("Check if you want to show links to sites such as Facebook, Twitter, etc. It will appear in the left sidebar with the header <strong>Other ways to reach me: </strong>", 'BlueBubble'),
 	"id" => $shortname."_social",
 	"type" => "checkbox",
 	"std" => ""),
 
 
-array( "name" => "Facebook Social Link",
-	"desc" => "If you would like a link to your Facebook page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Facebook Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Facebook page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_fb",
 	"type" => "text",
 	"std" => ""),
 	
-array( "name" => "Twitter Social Link",
-	"desc" => "If you would like a link to your Twitter page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Twitter Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Twitter page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_tw",
 	"type" => "text",
 	"std" => ""),
 	
-array( "name" => "LinkedIn Social Link",
-	"desc" => "If you would like a link to your LinkedIn page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("LinkedIn Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your LinkedIn page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_lnk",
 	"type" => "text",
 	"std" => ""),
+
+array( "name" => __("Behance Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Behance page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
+	"id" => $shortname."_soc_beh",
+	"type" => "text",
+	"std" => ""),
 	
-array( "name" => "Delicious Social Link",
-	"desc" => "If you would like a link to your Delicious page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Delicious Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Delicious page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_de",
 	"type" => "text",
 	"std" => ""),
 		
-array( "name" => "Digg Social Link",
-	"desc" => "If you would like a link to your Digg page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Digg Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Digg page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_dg",
 	"type" => "text",
 	"std" => ""),
 	
-array( "name" => "DeviantArt Social Link",
-	"desc" => "If you would like a link to your DeviantArt page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("DeviantArt Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your DeviantArt page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_dva",
 	"type" => "text",
 	"std" => ""),
 	
-array( "name" => "MySpace Social Link",
-	"desc" => "If you would like a link to your MySpace page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("MySpace Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your MySpace page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_ms",
 	"type" => "text",
 	"std" => ""),
 	
-array( "name" => "Evernote Social Link",
-	"desc" => "If you would like a link to your Evernote page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Evernote Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Evernote page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_ev",
 	"type" => "text",
 	"std" => ""),
 
-array( "name" => "Flickr Social Link",
-	"desc" => "If you would like a link to your Flickr page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Flickr Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Flickr page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_fl",
 	"type" => "text",
 	"std" => ""),
 	
-array( "name" => "Netvibes Social Link",
-	"desc" => "If you would like a link to your Netvibes page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Netvibes Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Netvibes page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_nv",
 	"type" => "text",
 	"std" => ""),
 	
-array( "name" => "Orkut Social Link",
-	"desc" => "If you would like a link to your Orkut page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Orkut Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Orkut page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_or",
 	"type" => "text",
 	"std" => ""),
 
-array( "name" => "Reddit Social Link",
-	"desc" => "If you would like a link to your Reddit page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Reddit Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Reddit page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_re",
 	"type" => "text",
 	"std" => ""),
 	
-array( "name" => "ShareThis Social Link",
-	"desc" => "If you would like a link to your ShareThis page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("ShareThis Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your ShareThis page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_sh",
 	"type" => "text",
 	"std" => ""),
 		
-array( "name" => "StumbleUpon Social Link",
-	"desc" => "If you would like a link to your StumbleUpon page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("StumbleUpon Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your StumbleUpon page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_su",
 	"type" => "text",
 	"std" => ""),
 
-array( "name" => "Technorati Social Link",
-	"desc" => "If you would like a link to your Technorati page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Technorati Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Technorati page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_te",
 	"type" => "text",
 	"std" => ""),
 
-array( "name" => "Tumblr Social Link",
-	"desc" => "If you would like a link to your Tumblr page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)",
+array( "name" => __("Tumblr Social Link", 'BlueBubble'),
+	"desc" => __("If you would like a link to your Tumblr page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)", 'BlueBubble'),
 	"id" => $shortname."_soc_tu",
 	"type" => "text",
 	"std" => ""),
@@ -405,24 +442,24 @@ array( "type" => "close"),
 
 
 
-array( "name" => "Search Engine Optimization",
+array( "name" =>(__("Search Engine Optimization", 'BlueBubble')),
 	"type" => "section"),
 array( "type" => "open"),
 
-array( "name" => "Meta Tag: Description",
-	"desc" => "The meta tag <strong>description</strong> is found in the header of your webpages and is used by search engines (i.e. Google) to rank and describe your site. Write an overall brief description of your site here.",
+array( "name" => __("Meta Tag: Description", 'BlueBubble'),
+	"desc" => __("The meta tag <strong>description</strong> is found in the header of your webpages and is used by search engines (i.e. Google) to rank and describe your site. Write an overall brief description of your site here.", 'BlueBubble'),
 	"id" => $shortname."_seo_description",
 	"type" => "textarea",
 	"std" => ""),
 
-array( "name" => "Meta Tag: Keywords",
-	"desc" => "The meta tag <strong>keywords</strong> is found in the header of your webpages and is used by search engines (i.e. Google) to rank and describe your site. List here the keywords that describe your site. <strong>(Example: Blue,Bubble,portfolio,theme)</strong>",
+array( "name" => __("Meta Tag: Keywords", 'BlueBubble'),
+	"desc" => __("The meta tag <strong>keywords</strong> is found in the header of your webpages and is used by search engines (i.e. Google) to rank and describe your site. List here the keywords that describe your site. <strong>(Example: Blue,Bubble,portfolio,theme)</strong>", 'BlueBubble'),
 	"id" => $shortname."_seo_keywords",
 	"type" => "textarea",
 	"std" => ""),
 	
-array( "name" => "Google Analytics Code",
-	"desc" => "You can put your Google Analytics code or code from another tracking service here if you want.  It is automatically added to the footer. Just paste your code, without the <strong><script></script></strong> tags.",
+array( "name" => __("Google Analytics Code", 'BlueBubble'),
+	"desc" => __("You can put your Google Analytics code or code from another tracking service here if you want.  It is automatically added to the footer. Just paste your code, without the &lt;script&gt;&lt;/script&gt; tags.", 'BlueBubble'),
 	"id" => $shortname."_ga_code",
 	"type" => "textarea",
 	"std" => ""),	
@@ -476,8 +513,8 @@ function mytheme_admin() {
 global $themename, $shortname, $options;
 $i=0;
  
-if ( $_REQUEST['saved'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' settings saved.</strong></p></div>';
-if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' settings reset.</strong></p></div>';
+if ( $_REQUEST['saved'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename. (__(' settings saved.</strong></p></div>', 'BlueBubble'));
+if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename. (__(' settings reset.</strong></p></div>', 'BlueBubble'));
  
 ?>
 <div class="wrap rm_wrap">
@@ -505,7 +542,7 @@ case "close":
  
 case "title":
 ?>
-<p>To easily use the <?php echo $themename;?> theme, you can use the menu below.</p>
+<p><?php _e('To easily use the', 'BlueBubble') ?> <?php echo $themename;?> <?php _e('theme, you can use the menu below.', 'BlueBubble') ?></p>
 
  
 <?php break;
@@ -571,7 +608,7 @@ $i++;
 ?>
 
 <div class="rm_section">
-<div class="rm_title"><h3><img src="<?php bloginfo('template_directory')?>/includes/images/trans.gif" class="inactive" alt="""><?php echo $value['name']; ?></h3><span class="submit"><input name="save<?php echo $i; ?>" type="submit" value="Save changes" />
+<div class="rm_title"><h3><img src="<?php bloginfo('template_directory')?>/includes/images/trans.gif" class="inactive" alt="""><?php echo $value['name']; ?></h3><span class="submit"><input name="save<?php echo $i; ?>" type="submit" value="<?php _e('Save changes', 'BlueBubble') ?>" />
 </span><div class="clearfix"></div></div>
 <div class="rm_options">
 
@@ -586,12 +623,12 @@ $i++;
 </form>
 <form method="post">
 <p class="submit">
-<input name="reset" type="submit" value="Reset" />
+<input name="reset" type="submit" value="<?php _e('Reset', 'BlueBubble') ?>" />
 <input type="hidden" name="action" value="reset" />
 </p>
 </form>
-<div style="font-size:9px; margin-bottom:10px;">Icons: <a href="http://www.woothemes.com/2009/09/woofunction/" target="_blank">WooFunction</a></div>
-<div style="font-size:9px; margin-bottom:10px;">Social Media Icons: <a href="http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/" target="_blank">Komodo Media</a></div>
+<div style="font-size:9px; margin-bottom:10px;"><?php _e('Icons:', 'BlueBubble') ?> <a href="http://www.woothemes.com/2009/09/woofunction/" target="_blank">WooFunction</a></div>
+<div style="font-size:9px; margin-bottom:10px;"><?php _e('Social Media Icons:', 'BlueBubble') ?> <a href="http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/" target="_blank">Komodo Media</a></div>
  </div> 
  
 

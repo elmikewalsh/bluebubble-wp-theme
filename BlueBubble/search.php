@@ -11,20 +11,20 @@ foreach ($options as $value) {
 	<div id="content">
 
 <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
- 	  <?php /* If this is a category archive */ if (is_category()) { ?>
-		<h2 class="pagetitle">Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h2>
+  	  <?php /* If this is a category archive */ if (is_category()) { ?>
+		<h2 class="pagetitle"><?php _e('Archive for the', 'BlueBubble') ?> &#8216;<?php single_cat_title(); ?>&#8217; <?php _e('Category', 'BlueBubble') ?></h2>
  	  <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-		<h2 class="pagetitle">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2>
+		<h2 class="pagetitle"><?php _e('Posts Tagged', 'BlueBubble') ?> &#8216;<?php single_tag_title(); ?>&#8217;</h2>
  	  <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-		<h2 class="pagetitle">Archive for <?php the_time('F jS, Y'); ?></h2>
+		<h2 class="pagetitle"><?php _e('Archive for', 'BlueBubble') ?> <?php the_time('F jS, Y'); ?></h2>
  	  <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-		<h2 class="pagetitle">Archive for <?php the_time('F, Y'); ?></h2>
+		<h2 class="pagetitle"><?php _e('Archive for', 'BlueBubble') ?> <?php the_time('F, Y'); ?></h2>
  	  <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-		<h2 class="pagetitle">Archive for <?php the_time('Y'); ?></h2>
+		<h2 class="pagetitle"><?php _e('Archive for', 'BlueBubble') ?> <?php the_time('Y'); ?></h2>
 	  <?php /* If this is an author archive */ } elseif (is_author()) { ?>
-		<h2 class="pagetitle">Author Archive</h2>
+		<h2 class="pagetitle"><?php _e('Author Archive', 'BlueBubble') ?></h2>
  	  <?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-		<h2 class="pagetitle">Blog Archives</h2>
+		<h2 class="pagetitle"><?php _e('Blog Archives', 'BlueBubble') ?></h2>
  	  <?php } ?>
 
 	<?php if (have_posts()) : ?>
@@ -35,11 +35,11 @@ foreach ($options as $value) {
 							
 				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 				
-				<p class="postmetadata">by <?php the_author(); ?> on <?php the_time('l, F jS, Y') ?>  | <?php comments_popup_link('No Comments &rarr;', '1 Comment &rarr;', '% Comments &rarr;'); ?> | <?php the_tags(); ?> </p>
+				<p class="postmetadata">by <?php the_author(); ?> on <?php the_time('l, j F Y') ?>  | <?php comments_popup_link(_e('No Comments &rarr;', 'BlueBubble'), _e('1 Comment &rarr;', 'BlueBubble'), _e('% Comments &rarr;', 'BlueBubble')); ?> | <?php the_tags(); ?> </p>
 
 				
 				<div class="entry">
-					<?php the_content('Read the rest of this entry &raquo;'); ?>
+					<?php the_content (__('Read the rest of this entry &raquo;', 'BlueBubble')); ?>
 				</div>
 				
 				
@@ -56,8 +56,8 @@ foreach ($options as $value) {
 
 	<?php else : ?>
 
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here. Try a different search please.</p>
+		<h2 class="center"><?php _e('Not Found', 'BlueBubble') ?></h2>
+		<p class="center"><?php _e('Sorry, but you are looking for something that is not here.', 'BlueBubble') ?></p>
 		
 
 	<?php endif; ?>
@@ -66,5 +66,5 @@ foreach ($options as $value) {
 
 
 
-<?php get_sidebar('blog'); ?>
+<?php get_sidebar('standard'); ?>
 <?php get_footer(); ?>

@@ -14,7 +14,7 @@ if(isset($_POST['submitted'])) {
 	
 		//Check to make sure that the name field is not empty
 		if(trim($_POST['contactName']) === '') {
-			$nameError = 'You forgot to enter your name.';
+			$nameError = _e('You forgot to enter your name.');
 			$hasError = true;
 		} else {
 			$name = trim($_POST['contactName']);
@@ -25,7 +25,7 @@ if(isset($_POST['submitted'])) {
 			$emailError = 'You forgot to enter your email address.';
 			$hasError = true;
 		} else if (!eregi("^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$", trim($_POST['email']))) {
-			$emailError = 'You entered an invalid email address.';
+			$emailError = _e('You entered an invalid email address.');
 			$hasError = true;
 		} else {
 			$email = trim($_POST['email']);
@@ -33,7 +33,7 @@ if(isset($_POST['submitted'])) {
 			
 		//Check to make sure comments were entered	
 		if(trim($_POST['comments']) === '') {
-			$commentError = 'You forgot to enter your message.';
+			$commentError = _e('You forgot to enter your message.');
 			$hasError = true;
 		} else {
 			if(function_exists('stripslashes')) {
@@ -93,7 +93,7 @@ foreach ($options as $value) {
     </div>
     <?php }else{ ?>
     <div class="thanks">
-    <p><?php _e('Thanks for sending an email.') ?></p>
+    <p><?php _e('Thanks for sending an email.', 'BlueBubble') ?></p>
     </div>
 	<?php } // End check for custom thank-you message ?>
 
@@ -102,7 +102,8 @@ foreach ($options as $value) {
 
 			<div class="postsingle" id="post-<?php the_ID(); ?>">
 
-				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo get_option('bb_twitter_name') ?>">Tweet</a></h1>
+				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a><?php if (get_option('bb_no_tweet') == '') { ?><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo get_option('bb_twitter_name') ?>">Tweet</a>
+<?php } // Check for Tweet Button Off ?></h1>
 
 				<div class="entry">
 
@@ -118,29 +119,29 @@ foreach ($options as $value) {
 		<form action="<?php the_permalink(); ?>" id="contactForm" method="post">
 	
 			<ol class="forms">
-				<li><label for="contactName">Name</label>
+				<li><label for="contactName"><?php _e('Name', 'BlueBubble') ?></label>
 					<input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="requiredField" />
 					<?php if($nameError != '') { ?>
 						<span class="error"><?=$nameError;?></span> 
 					<?php } ?>
 				</li>
 				
-				<li><label for="email">Email</label>
+				<li><label for="email"><?php _e('Email', 'BlueBubble') ?></label>
 					<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="requiredField email" />
 					<?php if($emailError != '') { ?>
 						<span class="error"><?=$emailError;?></span>
 					<?php } ?>
 				</li>
 				
-				<li class="textarea"><label for="commentsText">Message</label>
+				<li class="textarea"><label for="commentsText"><?php _e('Message', 'BlueBubble') ?></label>
 					<textarea name="comments" id="commentsText" rows="20" cols="30" class="requiredField"><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?></textarea>
 					<?php if($commentError != '') { ?>
 						<p class="error"><?=$commentError;?></p> 
 					<?php } ?>
 				</li>
-				<li class="inline"><input type="checkbox" name="sendCopy" id="sendCopy" value="true"<?php if(isset($_POST['sendCopy']) && $_POST['sendCopy'] == true) echo ' checked="checked"'; ?> /> <label for="sendCopy">Send a copy of this email to yourself</label></li>
+				<li class="inline"><input type="checkbox" name="sendCopy" id="sendCopy" value="true"<?php if(isset($_POST['sendCopy']) && $_POST['sendCopy'] == true) echo ' checked="checked"'; ?> /> <label for="sendCopy"><?php _e('Send a copy of this email to yourself', 'BlueBubble') ?></label></li>
 				<li class="screenReader"><label for="checking" class="screenReader">If you want to submit this form, do not enter anything in this field</label><input type="text" name="checking" id="checking" class="screenReader" value="<?php if(isset($_POST['checking']))  echo $_POST['checking'];?>" /></li>
-				<li class="buttons"><input type="hidden" name="submitted" id="submitted" value="true" /><button type="submit">Send</button></li>
+				<li class="buttons"><input type="hidden" name="submitted" id="submitted" value="true" /><button type="submit"><?php _e('Send', 'BlueBubble') ?></button></li>
 			</ol>
 		</form>
 	

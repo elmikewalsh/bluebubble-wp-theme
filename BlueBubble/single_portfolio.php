@@ -20,12 +20,13 @@ foreach ($options as $value) {
 					<?php the_post_thumbnail('portfolio-big'); ?>				
 				</div>
 			
-				<h2><?php the_title(); ?><a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>" data-count="horizontal" data-text="<?php the_title(); ?>" data-via="<?php echo get_option('bb_twitter_name') ?>">Tweet</a></h2>
+				<h2><?php the_title(); ?><?php if (get_option('bb_no_tweet') == '') { ?><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo get_option('bb_twitter_name') ?>">Tweet</a>
+<?php } // Check for Tweet Button Off ?></h2>
 
 				<div class="entry">
-					<?php the_content('Read the rest of this entry &raquo;'); ?>
+					<?php the_content (__('Read the rest of this entry &raquo;', 'BlueBubble')); ?>
 					
-					<a class="homelink" title="<?php echo bloginfo('blog_name'); ?>" href="<?php echo get_option('home'); ?>/"> &larr; Back </a>
+					<a class="homelink" title="<?php echo bloginfo('blog_name'); ?>" href="<?php echo get_option('home'); ?>/"> &larr; <?php _e('Back', 'BlueBubble') ?> </a>
 					
 				</div>
 
@@ -45,8 +46,8 @@ if (get_option('bb_comments')) {
 
 	<?php else : ?>
 
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+		<h2 class="center"><?php _e('Not Found', 'BlueBubble') ?></h2>
+		<p class="center"><?php _e('Sorry, but you are looking for something that is not here.', 'BlueBubble') ?></p>
 		
 
 	<?php endif; ?>

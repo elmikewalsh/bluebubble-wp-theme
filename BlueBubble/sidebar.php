@@ -15,19 +15,19 @@ foreach ($options as $value) {
 	<?php 	/* Widgetized sidebar */
 		if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 					
-		<b>Hi there.</b> I am BlueBubble, a brand-new minimal &amp; elegant wordpress portfolio theme 
-		exclusivey designed for <strong>you</strong> <br /> - by <a href="http://www.thomasveit.com">Thomas Veit</a> with love on Mac. <br />
-<br />
-<strong>New!</strong> BlueBubble 3.0, compatible with Wordpress 3.0, has been released. <strong>Version 3.0 Updates</strong> <br /> - by <a href="http://arte.dosmundoscafe.com" target="_blank">Mike Walsh</a> with love on a PC.
+<?php _e('<strong>Hi there.</strong> I am BlueBubble, a brand-new minimal y elegant Wordpress portfolio theme exclusively designed for <strong>you</strong>  <br /> - por <a href="http://www.thomasveit.com" target="_blank">Thomas Veit</a> with love on a Mac.', 'BlueBubble') ?>
 <br />
 <br />
-You can place a widget here to remove the text above.
+<?php _e('<strong>New!</strong> BlueBubble 3.0, compatible with Wordpress 3.0, has been released. <strong>Version 3.0 Updates</strong> <br /> - by <a href="http://arte.dosmundoscafe.com" target="_blank">Mike Walsh</a> with love on a PC.', 'BlueBubble') ?>
+<br />
+<br />
+<?php _e('You can place a widget here to remove the text above.', 'BlueBubble') ?>
 <?php endif; ?>
 
 <?php if (get_option('bb_twitter') ) { ?>  
 <hr class="divider" />
 <div id="twitter_div">
-<strong>From Twitter</strong> 
+<strong><?php _e('From Twitter', 'BlueBubble') ?></strong> 
     <ul id="twitter_update_list"></ul>  
 </div> 
  
@@ -35,7 +35,7 @@ You can place a widget here to remove the text above.
 
 <?php if (get_option('bb_social') ) { ?>
 <hr class="divider" />            
-<strong>Other ways to reach me:</strong> <br /><br />
+<strong><?php _e('Other ways to reach me:', 'BlueBubble') ?></strong> <br /><br />
 
 
 <ul class="social">
@@ -48,6 +48,9 @@ You can place a widget here to remove the text above.
 <?php if ( get_option( 'bb_soc_lnk' ) ) { ?>
 <li class="soc"><a href="<?php echo get_option('bb_soc_lnk'); ?>" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/social/linkedin_32.png" /></a></li>
 <?php } // End check for Social Badges ?>
+<?php if ( get_option( 'bb_soc_beh' ) ) { ?>
+<li class="soc"><a href="<?php echo get_option('bb_soc_beh'); ?>" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/social/behance_32.png" /></a></li>
+<?php } // End check for Social Badges ?>	
 <?php if ( get_option( 'bb_soc_de' ) ) { ?>
 <li class="soc"><a href="<?php echo get_option('bb_soc_de'); ?>" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/social/delicious_32.png" /></a></li>
 <?php } // End check for Social Badges ?>
@@ -86,7 +89,8 @@ You can place a widget here to remove the text above.
 <?php } // End check for Social Badges ?>
 <?php if ( get_option( 'bb_soc_tu' ) ) { ?>
 <li class="soc"><a href="<?php echo get_option('bb_soc_tu'); ?>" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/social/tumblr_32.png" /></a></li>
-<?php } // End check for Social Badges ?>	
+<?php } // End check for Social Badges ?>
+
 
 <?php } // End check for Social Sites section ?>
 </ul>
