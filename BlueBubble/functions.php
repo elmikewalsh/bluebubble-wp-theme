@@ -213,7 +213,7 @@ array( "type" => "close"),
 
 
 
-array( "name" => "Category and Comments",
+array( "name" => "Portfolio, Blog and Comments",
 	"type" => "section"),	
 array( "type" => "open"),
 	
@@ -223,6 +223,18 @@ array( "name" => "Portfolio Category",
 	"type" => "select",
 	"options" => $wp_cats,
 	"std" => "Choose a category for your portfolio."),
+
+array( "name" => "Portfolio Items Per Page",
+	"desc" => "How many portfolio items do you want to show on each page? (default is 6)",
+	"id" => $shortname."_portfolio_num",
+	"type" => "text",
+	"std" => ""),
+
+array( "name" => "Turn Off Lightbox?",
+	"desc" => "Check if you want to <strong>turn off</strong> the Colorbox popup that appears when clicking an image on your portfolio page. (if turned off, clicking the image will take you to the single portfolio page with the larger image)",
+	"id" => $shortname."_no_colorbox",
+	"type" => "checkbox",
+	"std" => ""),
 	
 array( "name" => "Blog Parent Category",
 	"desc" => "Enter the name of the Portfolio category. (you must create categories before they will show up in the list.)",
@@ -230,7 +242,13 @@ array( "name" => "Blog Parent Category",
 	"type" => "select",
 	"options" => $wp_cats,
 	"std" => "Choose a category for your blog."),
-	
+
+array( "name" => "Oldest Posts First?",
+	"desc" => "BlueBubble 3.0 normally displays posts from newest to oldest. Check if you want to show oldest posts first. (Note: This will only change blog posts, not portfolio posts order)",
+	"id" => $shortname."_post_order",
+	"type" => "checkbox",
+	"std" => ""),
+
 array( "name" => "Comments disable?",
 	"desc" => "Check if you want to disable comments on portfolio items.",
 	"id" => $shortname."_comments",

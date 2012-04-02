@@ -8,7 +8,7 @@ foreach ($options as $value) {
 
 <div id="sidebar">
 	
-		<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'main-nav', 'theme_location' => 'first-menu' ) ); ?>
+		<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'main-nav', 'menu_class' => 'main-nav', 'theme_location' => 'first-menu', 'depth' => '2' ) ); ?>
 	<br />
 		
 <hr class="divider" />	

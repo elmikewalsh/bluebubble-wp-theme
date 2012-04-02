@@ -21,20 +21,26 @@ a{
 	outline: none;
 	}
 
-.main-nav ul#menu-main li {
+.main-nav ul.main-nav li {
 	border-top: 1px solid #545a3b !important;
 	border-bottom: 1px solid #333724 !important;
 }
 
-.main-nav ul#menu-main li:first-child {border-top: none;}
-.main-nav ul#menu-main li:last-child {border-bottom: none;}
-.main-nav ul#menu-main li a {
+.main-nav ul.main-nav li:first-child {border-top: none;}
+.main-nav ul.main-nav li:last-child {border-bottom: none;}
+.main-nav ul.main-nav li a {
 	padding: 3px;
 	display: block;
 	color: #eee !important;
 	text-decoration: none;
 }
-.main-nav ul#menu-main li a:hover {background: #333724 !important;color:#ccc !important;}
+.main-nav ul.main-nav li a:hover {background: #333724 !important;color:#ccc !important;}
+
+.main-nav ul.main-nav  li ul.sub-menu li {
+	margin:0 0 0 10px;
+	border-left:1px solid #333724 !important;
+	list-style-type:none;
+}
 
 #container {
 	width: 960px;

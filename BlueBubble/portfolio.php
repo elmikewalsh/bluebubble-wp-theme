@@ -7,6 +7,11 @@ Template Name: Portfolio
 <?php get_header(); ?>
 
 <?php
+	if ( get_option('bb_portfolio_num') ) {  $portfolio_num = get_option('bb_portfolio_num'); 
+    }else{ $portfolio_num = '6'; } //change this with your email address
+?>
+				
+<?php
 //allows the theme to get info from the theme options page
 global $options;
 foreach ($options as $value) {
@@ -14,24 +19,37 @@ foreach ($options as $value) {
 }
 ?>
 
-<?php global $post; $pageid = $post->ID; ?>
-
-	<div id="content">
-	
-	
-<?php if (have_posts()) : ?>
-     <?php query_posts("category_name=$bb_portfolio_cat&posts_per_page=100"); ?>
+	<div id="content">          
+	<?php if (have_posts()) : ?>
+    
+	 <?php
+	 /* Mali Studio dummy fix */
+	if (is_front_page()){
+		$bb_portfolio_page_param = 'page';
+		}	 	
+	else{
+		$bb_portfolio_page_param = 'paged';
+		}
+		
+	 $paged = (get_query_var($bb_portfolio_page_param)) ? get_query_var($bb_portfolio_page_param) : 1; 
+	 /* END Mali Studio dummy fix */
+	 ?>  
+     
+    <?php  query_posts("paged=$paged&category_name=$bb_portfolio_cat&posts_per_page=$portfolio_num"); ?>
         <?php while (have_posts()) : the_post(); ?>
 
 
-			<div class="item" id="post-<?php the_ID(); ?>">
+            <div class="item" id="post-<?php the_ID(); ?>">
+
 				
 				<div class="box">
-				<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-				<a href="<?php echo wp_get_attachment_url($thumbID); ?>" rel="project">
-					<?php the_post_thumbnail('portfolio-thumb') ?>
-                    <!-- ALT POSSIBILITY: (array(200,160), array("class" => "project")); -->
-					</a>
+				<?php if ( get_option('bb_no_colorbox') ) { ?>
+                <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"> 
+                <?php }else{ ?>
+                <?php $thumbID = get_post_thumbnail_id($post->ID); ?>
+                <a href="<?php echo wp_get_attachment_url($thumbID); ?>" rel="project"><?php } // End check for No Colorbox ?>
+				<?php the_post_thumbnail('portfolio-thumb') ?>
+				</a>
 				
 				</div>
 			

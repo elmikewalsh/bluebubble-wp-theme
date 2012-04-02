@@ -26,17 +26,17 @@
 	var ajaxgifpath = '<?php bloginfo('template_directory'); ?>/images/loader.gif';
 </script>
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/jquery.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/js.js"></script>
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/contact-form.js"></script>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<?php if (get_option('bb_no_colorbox') == '') { ?><script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/scripts/jquery.colorbox-min.js"></script>
 		<script>
 			$(document).ready(function(){
 				//Examples of how to assign the ColorBox event to elements
 				$("a[rel='project']").colorbox({rel:'nofollow'});
 				});
 		</script>
-        
+<?php } // Check for Colorbox Off ?>        
 
 <!-- ** Links ** -->
 

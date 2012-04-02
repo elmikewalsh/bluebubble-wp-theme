@@ -21,20 +21,26 @@ a{
 	outline: none;
 	}
 
-.main-nav ul#menu-main li {
+.main-nav ul.main-nav li {
 	border-top: 1px solid #cbee7f !important;
 	border-bottom: 1px solid #a9c66a !important;
 }
 
-.main-nav ul#menu-main li:first-child {border-top: none;}
-.main-nav ul#menu-main li:last-child {border-bottom: none;}
-.main-nav ul#menu-main li a {
+.main-nav ul.main-nav li:first-child {border-top: none;}
+.main-nav ul.main-nav li:last-child {border-bottom: none;}
+.main-nav ul.main-nav li a {
 	padding: 3px;
 	display: block;
 	color: #606060 !important;
 	text-decoration: none;
 }
-.main-nav ul#menu-main li a:hover {background: #a9c66a !important;color:#404040 !important;}
+.main-nav ul.main-nav li a:hover {background: #a9c66a !important;color:#404040 !important;}
+
+.main-nav ul.main-nav  li ul.sub-menu li {
+	margin:0 0 0 10px;
+	border-left:1px solid #a9c66a !important;
+	list-style-type:none;
+}
 
 #container {
 	width: 960px;

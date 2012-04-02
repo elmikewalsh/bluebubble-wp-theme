@@ -16,9 +16,10 @@ foreach ($options as $value) {
 
 	<div id="content">          
 
+
 	<?php if (have_posts()) : ?>
 	 <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-     <?php query_posts("paged=$paged&category_name=$bb_blog_cat"); ?>
+
         <?php while (have_posts()) : the_post(); ?>
 
 			<div class="postsingle" id="post-<?php the_ID(); ?>">

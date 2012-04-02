@@ -12,7 +12,10 @@ foreach ($options as $value) {
 
 	<?php if (have_posts()) : ?>
 	 <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-     <?php query_posts("paged=$paged&category_name=$bb_blog_cat"); ?>
+          <?php if ( get_option('bb_post_order') ) { ?>
+	 <?php query_posts("paged=$paged&category_name=$bb_blog_cat&order=ASC"); ?>
+     <?php }else{ ?>
+     <?php query_posts("paged=$paged&category_name=$bb_blog_cat&order=DESC"); ?><?php } // End check for Comments Order ?>
         <?php while (have_posts()) : the_post(); ?>
 
 			<div class="postsingle" id="post-<?php the_ID(); ?>">
