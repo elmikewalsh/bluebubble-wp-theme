@@ -1,0 +1,189 @@
+ 
+    .clear{  
+        clear: both;  
+    }  
+    #page-wrap{  
+        width: 660px;  
+        position: relative;  
+		float:right;
+        margin: 0 auto 40px;  
+	}
+/*--Main Content Styles Start here --*/
+#main-content{
+	width: 660px;
+	float:right;
+/*    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-color: #BBBBBB #F5F5F5 #F5F5F5 #BBBBBB;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;*/
+    clear: both;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 24px 0;
+    overflow: hidden;
+    padding: 0 25px 28px 30px;
+	color:#555;
+}
+
+#main-content a:hover{
+	color: #999;
+}
+#layout-controls{
+	margin-bottom: 15px;
+}
+ul, ol {margin-left:3px;}
+#layout-controls span{
+	width: 20px;
+	height: 26px;
+	display: block;
+	background-image: url('../images/layout-icons.png');
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	text-indent: -99999px;
+}
+#layout-controls a{
+	width: 20px;
+	height: 26px;
+	display: block;
+	float: left;
+	background-image: url('../images/layout-icons.png');	
+	margin-right: 10px;
+	display: inline;	
+}
+#layout-controls a.grid span{ 
+	background-position: left 0;
+}
+#layout-controls a.grid{
+	background-position: left -26px;
+}
+#layout-controls a.list span{
+	background-position: right 0;
+}
+#layout-controls a.list{
+	background-position: right -26px;
+}
+#layout-controls a:hover span{
+	opacity: 0; /* other browsers */
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); /* this works in IE6, IE7, and IE8 */
+}
+/*-------------Folio Styles Starts Here---------------*/
+ul#folio li a{
+	color:#555;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+ul#folio li{
+	background: #bebebe;
+	padding: 20px;
+	border: 1px #666 solid;
+	margin-bottom: 22px;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+ul#folio li:hover{
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.3 opacity */
+	background: rgba(0, 0, 0, 0.05);
+}
+ul#folio li .image{
+	text-align: center;
+}
+ul#folio li .image span{
+	width: 158px;
+	height: 116px;
+	display: block;
+	overflow: hidden;
+	background-color: #fff;
+	border:1px solid #666;
+	margin-bottom: 10px;
+}
+ul#folio li .image span a{
+	width: 158px;
+	height: 116px;
+	display: block;
+}
+ul#folio li .image a{
+	font-weight: bold;
+}
+/*------------------Grid Layout Starts Here-------------------*/
+ul#folio.grid li{
+	width: 158px;
+	height: 130px;
+	float: left;	
+	margin-right: 19px;	
+	display: inline;
+}
+ul#folio.grid li .content{
+	display: none;
+}
+ul#folio.grid li .image span a{
+	width: 158px;
+	height: 116px;
+	display: block;
+}
+ul#folio.grid li.rightmost{
+	margin-right: 0;
+}
+/*------------------List Layout Starts Here-------------------*/
+ul#folio.list li{
+	display: block;
+}
+ul#folio.list li .image,ul#folio li.details .image{
+	width: 158px;
+	height: 130px;
+	float:left;
+}
+ul#folio.list li .content{
+	float: left;
+	padding: 0 10px 0 40px;
+	width: 400px;
+	word-wrap:break-word;
+}
+ul#folio.list li .content h2,ul#folio li.details .content h2{
+	font-size: 24px;
+	color: #C2FC48;
+	margin-bottom: 6px;
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+}
+ul#folio.list li .content span.tags,ul#folio li.details .content span.tags{
+	color: #444;
+	font-size: 11px;
+	font-style: italic;
+	margin-bottom: 10px;
+	display: block;
+}
+
+
+/*------------------Details Layout Starts Here-------------------*/
+ul#folio li.details{
+	display: block;
+	width: auto;
+	height: auto;
+	width: 820px;
+	float: left;	
+	margin-right: 19px;	
+	min-height:130px;
+	text-wrap:normal;	
+}
+ul#folio li.details .content{
+	display: block !important;	
+	float: left;
+	padding: 0 10px 0 40px;
+	width: 598px;
+}
+.port-excerpt {
+	color:#000;
+}

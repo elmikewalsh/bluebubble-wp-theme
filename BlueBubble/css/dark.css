@@ -1,0 +1,779 @@
+/* basics */
+
+*{margin:0; padding:0;}
+
+body {
+	background:#202020 !important;
+	font-family: verdana, arial, tahoma, sans-serif;
+	font-size: 12px;
+	margin:20px;
+	}
+
+blockquote{
+	border-left:4px solid #161616 !important;
+	margin-left:15px;
+	padding:0 12px 0 12px;
+	}
+
+a{
+	color:#909090 !important;
+	text-decoration:none;
+	outline: none;
+	}
+
+.main-nav ul.main-nav  li, #widget li {
+	border-top: 1px solid #2d2d2d !important;
+	border-bottom: 1px solid #161616 !important;
+}
+
+.main-nav ul.main-nav li:first-child, #widget li:first-child{border-top: none !important;} 
+.main-nav ul.main-nav li:last-child, #widget li:last-child{border-bottom: none !important;}
+.main-nav ul.main-nav li a, #widget li a {
+	padding: 3px;
+	display: block;
+	color: #999 !important;
+	text-decoration: none;
+}
+.main-nav ul.main-nav  li a:hover, #widget li a:hover {background: #111 !important;color:#eee !important;}
+
+.main-nav ul.main-nav  li ul.sub-menu li, #widget li ul.sub-menu li  {
+	margin:0 0 0 10px;
+	border-left:1px solid #161616 !important;
+	list-style-type:none;
+}
+
+/* LEGACY MENU STYLE - pre BlueBubble 3.0 */
+.main-nav ul.oldmenu {
+	margin:0px 0 15px 0;
+	padding:0;
+	display: block;
+	width:100%;
+	}
+
+.main-nav ul.oldmenu li {
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	list-style-type: none;
+	display: block;
+	width: 100%;
+	border-bottom: 1px dotted #111 !important;
+	}
+
+.main-nav ul.oldmenu li a {
+    color:#999 !important;
+    display:block;
+    text-decoration:none;
+}
+
+.main-nav ul.oldmenu li a:hover {
+	color:#eee !important;
+	background-color: #111 !important;
+}
+
+/* container */
+#container {
+	width: 960px;
+	margin: 0 auto;
+	padding:0;
+	background:#202020 !important;
+	color:#eee !important;
+	overflow: hidden;
+	}
+
+#header {
+	background:#202020 !important;
+  	width: 960px; 
+  	height: 100px;
+	color: #eee; 
+	}
+
+/* Header Nav */
+.header-nav li a {
+	margin-right: 10px;
+	line-height:38px;
+	color: #000 !important;
+	font-weight:bold;
+	padding: 2px 12px 3px 11px;
+	outline: none;
+	text-decoration: none;	
+    text-shadow: 1px 1px 2px #404040 !important;
+}
+.header-nav li:hover > a
+{
+	margin-right: 10px;
+	line-height:38px;
+	color: #fff !important;
+	background:#000 !important;
+	padding: 2px 12px 3px 11px;
+	outline: none;
+	text-decoration: none;	
+	text-shadow: none !important;
+	/* Border Radius */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	/* Border Shadow */
+	-webkit-box-shadow: 1px 1px 1px #404040 !important;
+	-moz-box-shadow: -1px -1px 1px #202020, 1px 1px 1px #404040 !important;
+	box-shadow: 1px 1px 1px #404040 !important;
+}
+		
+#header h1 a{color: #fff !important; text-decoration: none;}
+#header h1 a:hover{color: #ccc !important; text-decoration: none;}
+
+
+#header h2{
+	font:normal 10px georgia, times;
+	color:#fff !important;
+	padding: 0 0 0 18px;
+	margin:0;	
+	}
+
+.box a img{
+	border: 1px solid #404040 !important;
+}
+
+.box a:hover img{
+	border: 1px solid #606060 !important;
+	-moz-box-shadow:0 0 5px #000;
+	-webkit-box-shadow:0 0 5px #000;
+}
+
+/* VARIOUS POST CLASSES DEPENDING ON PORTFOLIO COLUMN NUMBER */
+
+.post{
+float: left; 
+margin: 5px 5px 30px 5px;
+width: 310px;
+background: #202020 !important;
+/* THIS IS ONLY FOR TESTING MARGIN SPACING...NO REASON WHY I CANT ERASE THIS... 
+-moz-box-shadow: 0px 0px 6px #999; 
+-webkit-box-shadow: 0px 0px 6px #999; 
+box-shadow: 0px 0px 6px #999; */
+}
+
+.post-3col{
+float: left; 
+margin: 5px 5px 30px 5px;
+width: 310px;
+background: #202020 !important;
+/* THIS IS ONLY FOR TESTING MARGIN SPACING...NO REASON WHY I CANT ERASE THIS... 
+-moz-box-shadow: 0px 0px 6px #999; 
+-webkit-box-shadow: 0px 0px 6px #999; 
+box-shadow: 0px 0px 6px #999; */
+}
+
+.post-3full {
+	margin:0 8px 30px 0;
+	float: left;
+	width: 312px;
+	}
+	
+.post-4full {
+	margin:0 10px 30px 0;
+	float: left;
+	width: 230px;
+	}
+
+.post-5full {
+	margin:0 5px 30px 0;
+	float: left;
+	width: 186px;
+	}
+
+.post-3col {
+	margin:0 8px 30px 0;
+	float: left;
+	width: 217px;
+	}
+
+.boxsingle {
+	width: 657px;
+	height: 318px;
+	border: 1px solid #606060 !important;
+	margin-bottom: 10px;
+	background: url(../images/loader.gif) center center no-repeat;
+}	
+	
+.postsingle {
+	margin:0 0 30px 20px;
+	padding:0;
+	line-height: 20px;
+	width: 657px; 
+	}
+		
+.post h2 {
+	font:bold 26px;
+	text-align:center;
+	}
+
+.post-3full h2, .post-3col h2 {
+	font:bold 18px;
+	text-align:center;
+	}
+
+.post-4full h2, .post-5full h2 {
+	font:bold 16px;
+	text-align:center;
+	}
+	
+.post h2 a, .postsingle h2 a, .post-3full h2 a, .post-4full h2 a, .post-5full h2 a, .post-3col h2 a {
+	color: #fff !important;
+	text-decoration: none;
+	}
+.post h2 a:hover, .postsingle h2 a:hover, .post-3full h2 a:hover, .post-4full h2 a:hover, .post-5full h2 a:hover, .post-3col h2 a:hover {
+	color: #ccc !important;
+	text-decoration: none;
+	}
+.post h1, .postsingle h1, .post-3full h1, .post-4full h1, .post-5full h1, .post-3col h1 {
+	font:bold;
+	line-height: 42px;
+	display: block;
+	border-bottom: 1px dotted #fff !important;
+}
+.post h1 a, .postsingle h1 a, .post-3full h1 a, .post-4full h1 a, .post-5full h1 a, .post-3col h1 a {
+	color: #fff !important;
+	text-decoration: none;
+	font-size: 26px;
+}
+	
+.post h1 a:hover, .postsingle h1 a:hover, .post-3full h1 a:hover, .post-4full h1 a:hover, .post-5full h1 a:hover, .post-3col h1 a:hover {
+	color: #777 !important;
+	text-decoration: none;
+}
+
+.post ul {}
+
+.post li {}
+
+.entry p {margin:12px 0 0 10px;}
+.entry .size-thumbnail {margin-top:-20px;}
+
+.postmetadata{
+	clear: both;
+	padding:6px;
+	margin: 10px 0;
+	color: #fff;
+	background: #404040 !important;
+	border:1px solid #101010 !important;
+	}
+
+/* NEW 3.0 */
+hr.divider{width:100%;line-height:2px;padding:1px;background:url('../images/divider/divider-black.gif') top repeat-x !important;}
+
+#sidebar h2{
+	font:normal 12px verdana, arial, tahoma;
+	color: #fff !important;	
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+}
+/*START EDITING HERE*/
+ol.forms input, ol.forms textarea {
+	border: 1px solid #151515;
+	color:#202020 !important;
+	width: 214px;
+	border-radius: 3px;
+	font: inherit;
+	padding: 2px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	}
+ol.forms textarea { height: 200px; width: 300px; }
+#contact-form input:hover, #contact-form textarea:hover {border: 1px solid #111111 !important;background:#eee !important;}
+#contact-form input:focus, #contact-form textarea:focus {border: 1px solid #060606 !important;background:#ccc !important;}
+.error { color: #cc3333 !important; }
+
+ol.forms li.buttons button {
+	height:100%;
+	width:100px;
+	background: #ccc !important;
+	border: 1px solid #101010 !important;
+	padding: 3px;
+	cursor: pointer;
+}
+ol.forms li.buttons button:hover {	
+    cursor: pointer;
+	background:#aaa !important;
+	padding: 3px;
+	border: 1px solid #050505 !important;}
+
+.thanks { color: #fff !important;
+	font-weight:bold;
+	background: #a9c66a !important;
+	border:2px solid #96b05e !important;
+	margin:5px 0 0 0px;
+	padding:10px 10px;
+}
+
+#footer {margin: 0 auto;width:960px; color:#fff !important;}
+
+#widget h2{
+	font:600 12px verdana, arial, tahoma;
+	color: #fff !important;	
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+}
+/* NEW STYLES 3.3 */
+#recentcomments li.recentcomments{
+	padding: 3px;
+	display: block;
+	color: #999 !important;
+	text-decoration: none;}
+
+#recentcomments li.recentcomments:hover{background: #111 !important;color:#eee !important;}
+#recentcomments li.recentcomments a {text-decoration:underline;color:#eee !important;}
+
+#widget .screen-reader-text {
+	display:none;
+}
+
+#widget #searchform #s {
+	border: 1px solid #ccc !important;
+	color:#202020 !important;
+	width: 145px;
+	border-radius: 3px;
+	font: inherit;
+	padding: 2px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	}
+
+#commentform {
+	padding: 20px;
+	margin:0 0 0 20px;
+	width: 615px; /* because of 20px padding */
+	background: #ddd !important;
+	border:1px solid #101010 !important;
+	color:#202020;
+	}
+
+input#submit {
+	height:100%;
+	width:200px;
+    background: #ccc !important;
+	border: 1px solid #202020 !important;
+	padding: 3px;
+	cursor: pointer;
+}
+
+input#submit:hover {
+    cursor: pointer;
+	background:#aaa !important;
+	padding: 3px;
+	border: 1px solid #111 !important;
+}
+
+.comment-body {
+	background: #333 !important;
+	border: 1px solid #101010 !important;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 100px;
+	padding: 20px;
+	color:#eee;
+}
+
+
+.bypostauthor .comment-body {
+    background: #999 !important;
+	border: 1px solid #101010 !important;
+	color:#eee !important;
+	font-weight:bold;
+}
+
+.bypostauthor .comment-body a{
+    color:#333 !important;
+	font-weight:normal;
+}
+
+.bypostauthor .avatar {
+	position: absolute;
+	padding: 3px;
+	border: 1px solid #101010 !important;
+	background:#999 !important;
+	margin: 0 20px 5px 0;
+	top:1px;
+	left: 1px;
+}
+
+.avatar {
+	position: absolute;
+	padding: 3px;
+	border: 1px solid #101010 !important;
+	margin: 0 20px 5px 0;
+	top:1px;
+	left: 1px;
+}
+
+/* NEW 3.0 */
+#entry-author-info {
+	background: #333 !important;
+	border: 1px solid #161616 !important;
+	border-right: 1px solid #303030 !important;
+	border-bottom: 1px solid #303030 !important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 18px 20px;
+	margin: 24px 0;
+	overflow: hidden;
+	clear: both;
+	font-size: 14px;
+	line-height: 20px;
+}
+#entry-author-info #author-avatar {
+	background: #222 !important;
+	border: 1px solid #111 !important;
+	border-right: 1px solid #262626 !important;
+	border-bottom: 1px solid #262626 !important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	margin: 5px -90px 0 0;
+	padding: 7px;
+}
+
+#entry-author-info h2 {
+	color: #fff !important;
+	font-weight: bold;
+	font-size: 100%;
+	margin-bottom: 0;
+}
+
+.commentlist blockquote{
+	border-left:4px solid #161616 !important;
+	margin-left:20px;
+	padding:0 12px 0 0px;
+	margin-bottom: 10px;
+}
+	
+/* misc */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	border: 1px solid #111 !important;
+	}
+
+img.alignright {
+	padding: 0px;
+	margin: 0 0 2px 14px;
+	display: inline;
+	border: 1px solid #111 !important;
+	}
+
+img.alignleft {
+	padding: 0px;
+	margin: 0 14px 2px 0;
+	display: inline;
+	border: 1px solid #111 !important;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+	
+.wp-capxion {
+   border: 1px solid #ddd;
+   text-align: center;
+   background-color: #f3f3f3 !important;
+   padding-top: 4px;
+   margin: 10px;
+   /* optional rounded corners for browsers that support it */
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+}
+
+
+/* NEW CONTACT FORM STYLING */
+
+    #contact-form {    
+        width:465px;  
+        padding:20px;  
+        margin: 10px 0 0 0; 
+        position:relative;  
+    }  
+
+    #contact-form li {
+		list-style:none;
+    }  	
+      
+    #contact-form h1 {  
+        font-size:42px;  
+    }  
+      
+    #contact-form h2 {  
+        margin-bottom:15px;  
+        font-style:italic;  
+        font-weight:normal;  
+    }  
+      
+    #contact-form input,  
+    #contact-form select,  
+    #contact-form textarea,  
+    #contact-form label {  
+        font-size:15px;  
+        margin-bottom:2px;
+    }  
+      
+    #contact-form input,  
+    #contact-form select,  
+    #contact-form textarea {  
+        width:450px;  
+        border: 1px solid #CEE1E8;  
+        margin-bottom:20px;  
+        padding:4px;  
+    } 
+
+    #loginform input,  
+    #loginform select,  
+    #loginform textarea {  
+        border: 1px solid #CEE1E8;  
+        margin-bottom:20px;  
+        padding:4px;  
+    } 
+
+    #contact-form input#submit {  
+        width:150px;  
+        border: 1px solid #CEE1E8;  
+        margin-bottom:20px;  
+        padding:4px;  
+    }  
+
+	#loginform input:focus,  
+    #loginform select:focus,  
+    #loginform textarea:focus {  
+        border: 1px solid #AFCDD8;  
+        background-color: #EBF2F4;  
+    }  
+	#contact-form input:focus,  
+    #contact-form select:focus,  
+    #contact-form textarea:focus {  
+        border: 1px solid #AFCDD8;  
+        background-color: #EBF2F4;  
+    }  
+      
+    #contact-form textarea {  
+        height:150px;  
+        resize: none;  
+    }  
+      
+    #contact-form label {  
+        display:block;  
+    }  
+      
+    #contact-form .required {  
+
+    }  
+      
+    #loginform .button-primary, #contact-form #submit-button {  
+        width: 100px;   
+        color:#202020;  
+        border:none;  
+        display:block;  
+        float:rightright;  
+        margin-bottom:0px;  
+        margin-right:6px;  
+        background-color:#ccc;  
+        -moz-border-radius:8px;
+		cursor:pointer;  
+    }
+	
+	#loginform .button-primary:hover, #loginform .button-primary:active {background-color:#aaaaaa;color:#111111} 
+      
+    #contact-form #submit-button:hover {  
+        background-color: #A6CFDD;  
+    }  
+      
+    #contact-form #submit-button:active {  
+        position:relative;  
+        top:1px;  
+    }  
+      
+    #error-box {  
+        border:solid 1px #E58E8E;  
+        padding:16px;
+        margin:0 0 10px 0;  
+        display:block;  
+        width:480px;  
+        -webkit-border-radius:8px;  
+        -moz-border-radius:8px;  
+        border-radius:8px;  
+        background:#FFE6E6 url(../images/cancel_48.png) no-repeat 460px center;
+		font-weight:bold;
+		color:#333333;   
+    }  
+ 
+
+.thanks { 
+    color: #404040;
+	font-weight:bold;
+	background:#D3EDD3;
+	width:480px;
+	border:solid 1px #83D186;   
+	-webkit-border-radius:8px;  
+    -moz-border-radius:8px;  
+    border-radius:8px; 
+	margin:5px 0 0 0px;
+	padding:16px 16px;
+	background:#D3EDD3 url(../images/accepted_48.png) no-repeat 460px center;
+	font-weight:bold;
+}
+
+.error { 
+    color: #404040;
+	font-weight:bold;
+	background:#FFE6E6;
+	border:solid 2px #E58E8E;
+	margin:5px 0 20px 0px;
+	padding:10px 10px;
+}
+      
+    #success {  
+        border:solid 1px #83D186;  
+        padding:25px 10px;  
+        margin:25px 0px;  
+        display:block;  
+        width:437px;  
+        -webkit-border-radius:8px;  
+        -moz-border-radius:8px;  
+        border-radius:8px;  
+        background:#D3EDD3 url(../images/accepted_48.png) no-repeat 405px center;  
+        font-weight:bold;  
+        display:none;  
+    }  
+      
+    #errors.visible, #success.visible {  
+        display:block;  
+    }  
+      
+    #req-field-desc {  
+        font-style:italic;  
+    }  
+      
+    /* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */  
+    input:required, textarea:required {  
+        -moz-box-shadow:none;  
+        -webkit-box-shadow:none;  
+        -o-box-shadow:none;  
+        box-shadow:none;  
+    }  
+      
+    /* Normalize placeholder styles */  
+      
+    /* chrome, safari */  
+    ::-webkit-input-placeholder {  
+        color:#CCC;  
+        font-style:italic;  
+    }  
+      
+    /* mozilla */  
+    input:-moz-placeholder, textarea:-moz-placeholder {  
+        color:#CCC;  
+        font-style:italic;  
+    }  
+      
+    /* ie (faux placeholder) */  
+    input.placeholder-text, textarea.placeholder-text  {  
+        color:#CCC;  
+        font-style:italic;  
+    }  
+
+
+
+
+/* NEW COMMENT FORM STYLING */
+
+
+/* Wrapper div for the entire comment form. */
+div#respond { }
+
+/* Reply title. */
+h3#reply-title { }
+
+/* Cancel comment link. */
+h3#reply-title small { }
+
+/* The comment form. */
+form#commentform {    background: none repeat scroll 0 0 #404040 !important;
+    color: #eeeeee;
+	border:1px solid #101010;
+    margin: 0 0 0 20px;
+    padding: 20px;
+    width: 615px;}
+
+/* Comment author field. */
+p.comment-form-author { }
+p.comment-form-author label, p.comment-form-email label, p.comment-form-url label, p.comment-form-twitter label, p.comment-form-comment label, p.form-allowed-tags {float:left;clear:both; margin:0 0 10px 5px;}
+p.comment-form-author label {}
+p.comment-form-author input#author {width:600px;border: 1px solid #bdd4dd;margin:0 0 15px 5px; padding:4px; }
+
+/* Comment email field. */
+p.comment-form-email { }
+p.comment-form-email label {}
+p.comment-form-email input#email {width:600px;border: 1px solid #bdd4dd;margin:0 0 15px 5px; padding:4px; }
+
+/* Comment URL field. */
+p.comment-form-url { }
+p.comment-form-url label { }
+p.comment-form-url input#url {float:left;clear:both;width:600px;border: 1px solid #bdd4dd;margin:0 0 15px 5px; padding:4px; }
+
+/* Comment Twitter field. */
+p.comment-form-twitter { }
+p.comment-form-twitter label {float:left;clear:both; margin-bottom:10px;}
+p.comment-form-twitter input#twitter {float:left;clear:both;width:600px;border: 1px solid #bdd4dd;margin:0 0 20px 5px; padding:4px; }
+
+/* Required (*) text. */
+span.required {color:#F00;clear:both;}
+
+/* Comment form text. */
+p.comment-form-comment { }
+p.comment-form-comment label {}
+p.comment-form-comment textarea#comment {width:600px;border: 1px solid #bdd4dd;margin:0 0 20px 5px; padding:4px;}
+
+ 
+        
+/* Input Fields Hover and Focus States. */
+p.comment-form-author input#author:focus, p.comment-form-email input#email:focus, p.comment-form-url input#url:focus, p.comment-form-twitter input#twitter:focus, p.comment-form-comment textarea#comment:focus {border: 1px solid #AFCDD8;background-color: #EBF2F4; }
+
+
+/* Must log in paragraph. */
+p.must-log-in { }
+
+/* Logged in paragraph. */
+p.logged-in-as { }
+
+/* Comment notes paragraph. */
+p.comment-notes {
+	background:#fdebae;
+	border:1px solid #e6c555;
+	color:#333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin:0 0 40px 0;
+	padding:10px 15px 10px 35px;
+	font-weight:bold;
+}
+
+/* Allowed tags paragraph. */
+p.form-allowed-tags {color: #FFFFFF !important;border: 1px solid #101010 !important;background-color: #555555 !important;padding:4px;}
+p.form-allowed-tags code { }
+
+/* Paragraph that wraps the submit button and hidden comment ID fields. */
+p.form-submit {}
+
+/* Submit button. */
+input#submit {margin:10px 0 0 5px;width:200px;cursor:pointer;}

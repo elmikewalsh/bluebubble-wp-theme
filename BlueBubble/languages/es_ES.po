@@ -1,0 +1,1875 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BlueBubble\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-10 01:02-0400\n"
+"PO-Revision-Date: 2011-11-10 01:07-0400\n"
+"Last-Translator: vrs <vfsrs>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: D:\\Downloads\\xampp-bb\\xampp\\htdocs\\wp-content\\themes\\BlueBubble\\languages\n"
+"X-Poedit-SearchPath-1: D:\\Downloads\\xampp-wp3\\xampp\\htdocs\\wp-content\\themes\\BlueBubble\n"
+"X-Poedit-SearchPath-2: D:\\Downloads\\xampp-wp-multi\\xampp\\htdocs\\wp-content\\themes\\BlueBubble\n"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/404.php:12
+msgid "Oops! 404 Error"
+msgstr "¡Caray! Un error 404."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/404.php:40
+msgid "Sorry! Your page is very lost!"
+msgstr "Lo siento, pero la página que buscas está bien perdida."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/404.php:41
+msgid "You are looking for a page or file which wandered off on its own...they sometimes have a habit of doing that."
+msgstr "Estás buscando a una página que está vagando allá en algún lugar...a veces tienen ese mal hábito."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/404.php:42
+msgid "Here are a few options to find what you are looking for."
+msgstr "Aquí hay unas opciones para encontrar lo que estás buscando."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/404.php:44
+msgid "Cry and scream like a little child."
+msgstr "Llora y grita como un niño."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/404.php:45
+msgid "Double check the web address for typos."
+msgstr "Revisa la dirección que escribiste en tu navegador."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/404.php:46
+msgid "Head back to our home page via the navigation below:"
+msgstr "Vuelva a nuestro sitio usando la navegación que sigue:"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:8
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:78
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:15
+msgid "Archive for the"
+msgstr "Archivo para la"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:8
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:78
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:15
+msgid "Category"
+msgstr "Categoría"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:10
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:80
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:17
+msgid "Posts Tagged"
+msgstr "Entradas etiquetadas"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:12
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:14
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:16
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:82
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:84
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:86
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:19
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:21
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:23
+msgid "Archive for"
+msgstr "Archivo de"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:18
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:88
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:25
+msgid "Author Archive"
+msgstr "Archivo del autor"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:20
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:90
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:27
+msgid "Blog Archives"
+msgstr "Archivo del Blog"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:42
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:101
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:36
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/index.php:25
+msgid "by"
+msgstr "por"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:42
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:101
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:36
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/index.php:25
+msgid "on"
+msgstr "el"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:42
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:101
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:36
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/index.php:25
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:42
+msgid "No Comments"
+msgstr "No comentarios"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:42
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:101
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:36
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/index.php:25
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:42
+msgid "1 Comment"
+msgstr "1 comentario"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:42
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:101
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:36
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/index.php:25
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:42
+msgid "% Comments"
+msgstr "%  comentarios"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:44
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:38
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/index.php:27
+msgid "This post was last updated on: "
+msgstr "Esta publicación fue actualizado el:"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:47
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:105
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:41
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/index.php:30
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/page.php:16
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:46
+msgid "Read the rest of this entry &raquo;"
+msgstr "Sigue leyendo la entrada &raquo;"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:63
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:122
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:57
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/index.php:46
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/page.php:30
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-3col.php:75
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-full.php:72
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/portfolio.php:74
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:63
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/archive.php:64
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:123
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/blog.php:58
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/index.php:47
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/page.php:31
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-3col.php:76
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-full.php:73
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/portfolio.php:75
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:64
+msgid "Sorry, but you are looking for something that is not here."
+msgstr "Lo siento, pero estás buscando algo que no está aquí."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:26
+#, php-format
+msgid "About %s"
+msgstr "Sobre %s"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:28
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:82
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:364
+msgid "Contact"
+msgstr "Contacta"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:31
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:233
+msgid "Phone"
+msgstr "Fono"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/author.php:39
+msgid "Website"
+msgstr "Sitio Web"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:9
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Favor de no cargar está página directamente. ¡Gracias!"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Esta publicación es protegida con una contraseá. Entrégala para ver los comentarios."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:21
+msgid "No Responses"
+msgstr "No respuestas"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:21
+msgid "One Response"
+msgstr "Una respuesta"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:21
+msgid "% Responses"
+msgstr "% respuestas"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:21
+msgid "to"
+msgstr "a"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:42
+msgid "Comments are closed."
+msgstr "Comentarios están cerrados"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/comments.php:47
+msgid "Please inspire the world with your comments."
+msgstr "Por favor, inspírale al mundo con tus comentarios."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:19
+msgid "You entered an invalid email address."
+msgstr "Tu email no es válido."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:86
+msgid "Thanks, your email was sent successfully."
+msgstr "Gracias, tu mensaje se ha enviado con éxito."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:90
+msgid "Sorry, an error occured."
+msgstr "Lo siento, pero ha ocurrido un error."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:96
+msgid "Name"
+msgstr "Nombre"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:105
+msgid "Email"
+msgstr "Email"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:113
+msgid "Message"
+msgstr "Mensaje"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/contact.php:122
+msgid "Send Email"
+msgstr "Enviar Email"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:38
+msgid "main"
+msgstr "Menú Principal"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:39
+msgid "footer"
+msgstr "footer"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:40
+msgid "404"
+msgstr "404"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:41
+msgid "Top"
+msgstr "Cima"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:64
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:359
+msgid "Blog"
+msgstr "Blog"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:73
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:354
+msgid "Portfolio"
+msgstr "Portafolio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:160
+msgid "Page"
+msgstr "Página"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:160
+msgid "of"
+msgstr "de"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:172
+msgid "Next"
+msgstr "Siguiente"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:173
+msgid "Last"
+msgstr "Última"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:273
+msgid "This is a premade Blog Page"
+msgstr "Esta es una página Blog prefabricada."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:294
+msgid "This is a premade Portfolio Page"
+msgstr "Esta es una página Potafolio prefabricada."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:315
+msgid "This is a premade Contact Page"
+msgstr "Esta es una páginade Contacto prefabricada."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:341
+msgid "Main Menu"
+msgstr "Menú Principal"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/functions.php:349
+msgid "Home"
+msgstr "Portada"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/header.php:61
+msgid "Please create a menu in the <a href=\"/wp-admin/nav-menus.php\">Admin Panel</a> and activate the menu in <a href=\"/wp-admin/themes.php?page=bbframework\">Theme Options</a>."
+msgstr "Por favor, crear un menú nuevo en <a href=\"/wp-admin/nav-menus.php\">Aparencia > Menús</a> y luego activar el menú en <a href=\"/wp-admin/themes.php?page=bbframework\">Opciones Theme</a>."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/page.php:18
+msgid "Back"
+msgstr "Atrás"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-3col.php:61
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/portfolio-full.php:58
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/portfolio.php:60
+msgid "Details"
+msgstr "Detalles"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:33
+msgid "Search Results for"
+msgstr "Resultados de búsqueda por"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:33
+msgid ": "
+msgstr ":"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/search.php:33
+msgid "articles"
+msgstr "artículos"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:26
+msgid "<strong>Hi there.</strong> I am BlueBubble, a brand-new minimal y elegant Wordpress portfolio theme exclusively designed for <strong>you</strong>  <br /> - por <a href=\"http://www.thomasveit.com\" target=\"_blank\">Thomas Veit</a> with love on a Mac."
+msgstr "<strong>Hola.</strong> Soy BlueBubble, un nuevo theme de portafolio para Wordpress en estilo elegante y minimalista diseñado exclusivamente para <strong>ti</strong>  <br /> - por <a href=\"http://www.thomasveit.com\" target=\"_blank\">Thomas Veit</a> con amor y un Mac."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:29
+msgid "<strong>New!</strong> BlueBubble 3.0, compatible with Wordpress 3.0, has been released. <strong>Version 3.0 Updates</strong> <br /> - by <a href=\"http://arte.dosmundoscafe.com\" target=\"_blank\">Mike Walsh</a> with love on a PC."
+msgstr "<strong>¡Nueva!</strong> BlueBubble 3.0, lo que es compatible con Wordpress 3.0, ya ha salido. <strong>Actualizaciones de versión 3.0</strong> <br /> - por <a href=\"http://arte.dosmundoscafe.com\" target=\"_blank\">Mike Walsh</a> con amor y un PC."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:32
+msgid "You can place a widget here to remove the text above."
+msgstr "Puedes colocar un wdget aquí para quitar el texto en esta columna."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:38
+msgid "From Twitter"
+msgstr "Desde Twitter"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:46
+msgid "Other ways to reach me:"
+msgstr "Otras maneras encontrarme:"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/sidebar.php:115
+msgid "Welcome, "
+msgstr "Bienvenidos, "
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/single_portfolio.php:17
+msgid "Year:"
+msgstr "Año:"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/single_portfolio.php:19
+msgid "Link:"
+msgstr "Enlace:"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/single_portfolio.php:19
+msgid "Visit Site"
+msgstr "Visitar sitio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/admin-interface.php:683
+msgid "All Categories"
+msgstr "Todas las categorías"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/admin-interface.php:684
+msgid "No Categories"
+msgstr "No Categorías"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/admin-interface.php:729
+msgid "All "
+msgstr "Todo"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/admin-interface.php:730
+msgid "No "
+msgstr "No"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:84
+msgid "General Settings"
+msgstr "Opciones Generales"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:87
+msgid "Custom Logo"
+msgstr "Logo de página de acceder"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:88
+msgid "Upload a logo for your theme, or specify the image address of your online logo. (http://example.com/logo.png)"
+msgstr "Carga a un logo para tu sitio, o indique la dirección del logo en el internet. (http://example.com/logo.png)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:93
+msgid "Custom Favicon"
+msgstr "Favicon Personalizado"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:94
+msgid "Upload a 16px x 16px Png/Gif image that will represent your website's favicon."
+msgstr "Carga a un imagen con dimensiones de  16px x 16px en formata png/gif que será el favicon."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:99
+msgid "Enable Plain Text Logo"
+msgstr "Usar un logo de texto normal. (no imagen)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:100
+msgid "Check this to enable a plain text logo rather than an image."
+msgstr "Marcar para usar un logo de texto normal."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:105
+msgid "GZIP Web Pages"
+msgstr "Comprimir Páginas con GZIP"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:106
+msgid "This option will compress your webpages so that they load faster. Depending on your server, it may cause errors. (it is turned off by default)"
+msgstr "Esta opción intentará comprimir las páginas para que se carguen más rápido. Depende del servidor que utilizes, se puede causar errores. (no está habilitado por omision)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:111
+msgid "Disable Post Formats"
+msgstr "Desactivar Formatas en Publicaciones. (nuevo en WP 3.1)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:112
+msgid "Custom Post Formats <strong>(aside, gallery, link, image, quote, audio, video)</strong> appear when creating a new Post. They are activated in BlueBubble by default. If you want to <strong>turn them off</strong>, check this box."
+msgstr "Formatas <strong>(estánder, minientrada, galería, enlace, imagen, cita, audio, video)</strong> aparecen cuando se añade a una nueva entrada. Están activados en BlueBubble por omisión. Si deseas <strong>desactivarlos</strong>, puedes marcar aquí."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:117
+msgid "Feedburner URL"
+msgstr "URL Feedburner"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:118
+msgid "Feedburner is a Google service that takes care of your RSS feed. Paste your Feedburner URL here to let readers see it in your website"
+msgstr "Feedburner es un servicio Google que maneja los servicios RSS de tu Blog. Pega aquí la dirección URL de tu Feedburner para compartirlo con tus visitantes."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:123
+msgid "Footer copyright text"
+msgstr "Texto de pie"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:124
+msgid "Enter text used in the left side of the footer. It can be HTML."
+msgstr "Ingresa el texto para el lado izquierdo del pie del sitio. Puede contener HTML."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:129
+msgid "Google Analytics Code"
+msgstr "Código de Analítico Google"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:130
+msgid "You can put your Google Analytics code or code from another tracking service here if you want.  It is automatically added to the footer. Just paste your code, without the &lt;script&gt;&lt;/script&gt; tags."
+msgstr "Puedes colocar el código de Google Analytics o de otro servicio de tracking aquí si quieres. Está automaticamente agregado al pie de tu sitio. Solo pega el código aquí, sin las etiquetas &lt;script&gt;&lt;/script&gt;."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:137
+msgid "Layout"
+msgstr "Configuración"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:140
+msgid "Theme Stylesheet"
+msgstr "Hoja de estilo"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:141
+msgid "Select your themes alternative color scheme."
+msgstr "Elige a una esquema de colores diferente."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:158
+msgid "Sidebar Login"
+msgstr "Ingresar Sidebar"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:159
+msgid "Check if you want to <strong>turn on</strong> a login form in the sidebar"
+msgstr "Marcar si quieres <strong>prender</strong> un formulario de ingresar en la columna a la izquierda."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:164
+msgid "Horizontal Top Menu"
+msgstr "Menú Superior Horizontal"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:165
+msgid "Check if you want a horizontal menu on the top-right of your website, to the right of the logo."
+msgstr "Marcar si quieres un menú horizontal en el derecho superior del sitio."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:170
+msgid "Legacy Menu Style"
+msgstr "Estilo de Menú Antiguo"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:171
+msgid "Check if you want to <strong>turn on</strong> the old BlueBubble navigation menu style, used before BlueBubble 3.0"
+msgstr "Marcar si quieres <strong>prender</strong> el estilo antiguo de BlueBubble, en uso antes de BlueBubble 3.0"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:176
+msgid "Custom Login"
+msgstr "Login Personalizado"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:177
+msgid "Check if you want to <strong>turn on</strong> a custom login screen. (replaces default Wordpress login screen.)"
+msgstr "Marcar si quieres <strong>prender</strong> un formulario de ingresar personalizado."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:182
+msgid "Custom CSS"
+msgstr "CSS Personalizado"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:183
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr "Puedes colocar código CSS adiciónal si lo tienes."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:190
+msgid "WP Dashboard"
+msgstr "Escritorio WP"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:193
+msgid "Remove All Dashboard Widgets"
+msgstr "Quitar todos los Widgets del Escritorio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:194
+msgid "Selecting this option will remove <strong>all</strong> the widgets from the Wordpress Dashboard"
+msgstr "Elegir esta opción quitará <strong>todos</strong> los Widgets del Escritorio de Wordpress."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:199
+msgid "Remove <em>Right Now</em> Dashboard Widget"
+msgstr "Quitar <em>Ahora Mismo</em> Widget del Escritorio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:200
+msgid "Selecting this option will remove the <strong>Right Now</strong> Widget from the Wordpress Dashboard"
+msgstr "Elegir esta opción quitará el <strong>Ahora Mismo</strong> Widget del Escritorio de Wordpress."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:205
+msgid "Remove <em>Recent Comments</em> Dashboard Widget"
+msgstr "Quitar <em>Comentarios Recientes</em> Widget del Escritorio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:206
+msgid "Selecting this option will remove the <strong>Recent Comments</strong> Widget from the Wordpress Dashboard"
+msgstr "Elegir esta opción quitará el <strong>Comentarios Recientes</strong> Widget del Escritorio de Wordpress."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:211
+msgid "Remove <em>Incoming Links</em> Dashboard Widget"
+msgstr "Quitar <em>Enlaces Entrantes</em> Widget del Escritorio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:212
+msgid "Selecting this option will remove the <strong>Incoming Links</strong> Widget from the Wordpress Dashboard"
+msgstr "Elegir esta opción quitará el <strong>Enlaces Entrantes</strong> Widget del Escritorio de Wordpress."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:217
+msgid "Remove <em>Plugins</em> Dashboard Widget"
+msgstr "Quitar <em>Plugins</em> Widget del Escritorio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:218
+msgid "Selecting this option will remove the <strong>Plugins</strong> Widget from the Wordpress Dashboard"
+msgstr "Elegir esta opción quitará el <strong>Plugins</strong> Widget del Escritorio de Wordpress."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:223
+msgid "Remove <em>Quick Press</em> Dashboard Widget"
+msgstr "Quitar <em>Publicación Rápida</em> Widget del Escritorio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:224
+msgid "Selecting this option will remove the <strong>Quick Press</strong> Widget from the Wordpress Dashboard"
+msgstr "Elegir esta opción quitará el <strong>Publicación Rápida</strong> Widget del Escritorio de Wordpress."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:229
+msgid "Remove <em>Recent Drafts</em> Dashboard Widget"
+msgstr "Quitar <em>Últimos Borradores</em> Widget del Escritorio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:230
+msgid "Selecting this option will remove the <strong>Recent Drafts</strong> Widget from the Wordpress Dashboard"
+msgstr "Elegir esta opción quitará el <strong>Últimos Borradores</strong> Widget del Escritorio de Wordpress."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:235
+msgid "Remove <em>Wordpress Blog</em> Dashboard Widget"
+msgstr "Quitar <em>Wordpress Blog</em> Widget del Escritorio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:236
+msgid "Selecting this option will remove the <strong>Wordpress Blog</strong> Widget from the Wordpress Dashboard"
+msgstr "Elegir esta opción quitará el <strong>Wordpress Blog</strong> Widget del Escritorio de Wordpress."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:241
+msgid "Remove <em>Other Wordpress News</em> Dashboard Widget"
+msgstr "Quitar <em>Other Wordpress News</em> Widget del Escritorio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:242
+msgid "Selecting this option will remove the <strong>Other Wordpress News</strong> Widget from the Wordpress Dashboard"
+msgstr "Elegir esta opción quitará el <strong>Other Wordpress News</strong> Widget del Escritorio de Wordpress."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:261
+msgid "Portfolio Category"
+msgstr "Categoría de Portafolio"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:262
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:298
+msgid "Enter the name of the Portfolio category. (you must create categories before they will show up in the list.)"
+msgstr "Elige el nombre de la categoría que quieres para el Portafolio. (solo categorías ya creadas aparecerán aquí)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:266
+msgid "Choose a category for your portfolio."
+msgstr "Elige a una categoría para tu portafolio."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:268
+msgid "Portfolio Items Per Page"
+msgstr "Nº de Portafolio Por Página"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:269
+msgid "How many portfolio items do you want to show on each page? (default is 6)"
+msgstr "¿Cuántos artículos quieres mostrar en cada página? (6 por omisión)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:274
+msgid "Entries disable?"
+msgstr "¿Deshabilita comentarios?"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:275
+msgid "Check if you want to disable the entries that appear below the title and thumbnails on the portfolio page."
+msgstr "Marcar si quieres deshabilitar comentarios en los artículos del portafolio."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:280
+msgid "Comments disable?"
+msgstr "¿Cerrar Comentarios?"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:281
+msgid "Check if you want to disable comments on portfolio items."
+msgstr "Marcar si quieres deshabilitar comentarios en los artículos del portafolio."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:286
+msgid "Turn Off Lightbox?"
+msgstr "¿Apagar Lightbox?"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:287
+msgid "Check if you want to <strong>turn off</strong> the Colorbox popup that appears when clicking an image on your portfolio page. (if turned off, clicking the image will take you to the single portfolio page with the larger image)"
+msgstr "Marcar si quieres <strong>apagar</strong> el Colorbox que aparece cuando alguien apreta una imagen en la página del portafolio. (Apretar el imagen cargará la página del portafolio con el imagen más grande si el Colorbox está apagado)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:294
+msgid "Blog and Posts"
+msgstr "Blog y Entradas"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:297
+msgid "Blog Parent Category"
+msgstr "Categoría de Blog"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:302
+msgid "Choose a category for your blog."
+msgstr "Elige a una categoría para tu Blog."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:304
+msgid "Blog Items Per Page"
+msgstr "Nº de Entradas del Blog Por Página"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:305
+msgid "How many blog items do you want to show on each page?"
+msgstr "¿Cuántos artículos quieres mostrar en cada página? (6 por omisión)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:316
+msgid "Show Date Updated?"
+msgstr "¿Mostrar Fecha Actualizada?"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:317
+msgid "Check this if you would like the <strong>last date updated</strong> to appear on Blog posts."
+msgstr "Marcar si quieres mostrar la <strong>última fecha actualizada</strong> con las entradas de tu Blog."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:322
+msgid "Show Tweet Buttons?"
+msgstr "¿Esconde Botones Tweet?"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:323
+msgid "Check if you want to show the Twitter <strong>Tweet</strong> buttons that appear on posts and pages. (The buttons do not appear by default)"
+msgstr "Marcar si quieres esconder los botones <strong>Tweet</strong> de Twitter que aprecen en publicaciones y páginas. (no aparecen por omisión)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:328
+msgid "Show Google+ Buttons?"
+msgstr "Mostrar Botones Google+"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:329
+msgid "Check if you want to show the <strong>Google+</strong> buttons that appear on posts and pages. (The buttons do not appear by default)"
+msgstr "Marcar si quieres esconder los botones <strong>Google+</strong> de Twitter que aprecen en publicaciones y páginas. (aparecen por omisión)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:335
+msgid "Twitter"
+msgstr "Twitter"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:338
+msgid "Show Twitter Stream?"
+msgstr "Muestra Twitter Stream?"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:339
+msgid "Check if you want to show Twitter your stream. It will appear in the left sidebar above <strong>Other ways to reach me: </strong> (you must indicate your Twitter username in the next field)"
+msgstr "Marcar si quieres mostrar el stream de Twitter. Aparecerá en la columna a la izquierda sobre <strong>Otras maneras encontrarme: </strong> (Tiene que ingresar tu nombre de usuario en el próximo campo)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:344
+msgid "Twitter Username"
+msgstr "Nombre Usuario Twitter"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:345
+msgid "Enter your Twitter username. In addition to the Twitter stream, your username will be used with the <strong>Tweet Button</strong> located on most pages. (you must check the box in the field above for your Twitter stream to show)"
+msgstr "Ingresa tu nombre de usuario Twitter. Además del stream de Twitter, tu nombre de usuario se usará con el botón <strong>Tweet</strong> ubicado en la mayoría de las páginas. (hay que marcar esta opción el el campo anterior para mostrar el stream de Twitter)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:350
+msgid "Number of Twitter Feeds"
+msgstr "Nº de Entradas Twitter"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:351
+msgid "How many Twitter entries do you want to show? (default is 2; more than 5 is not recommended)"
+msgstr "¿Cuántas entradas el tu stream de Twitter quieres mostrar? (2 por omisión; no se recomienda más que 5)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:358
+msgid "Contact Form"
+msgstr "Formulario Contacto"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:361
+msgid "Contact Form Email Address"
+msgstr "Email Desde Formulario"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:362
+msgid "Where do you want the emails from the contact form to arrive? Place that email address here. (if no email address is entered, email will automatically be sent to the administrator email address)"
+msgstr "¿Dónde quieres que llegan los email enviados desde el formulario de contacto? Coloca está dirección de email aquí. (si no ingresa una dirección el formulario automaticamente enviará los correos a la dirección del administrador del sitio)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:367
+msgid "<strong>Email Subject</strong>"
+msgstr "<strong>Sujeto del email</strong>"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:368
+msgid "You can define here the subject of the emails sent from the website Contact Form."
+msgstr "Se puede definir aquí el sujeto de los mensajes enviados desde el formlario de contacto."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:373
+msgid "General error message"
+msgstr "Mensaje de error general"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:374
+msgid "Write a custom error message to display if there is an error in general. (if no message is entered, the default message - <strong>There is an error</strong> - will be displayed)"
+msgstr "Escribir un mensaje para mostrar si hay un erroren general. (sin mensaje, lo mostrará - <strong>Ocurrió un error</strong> - por omisión)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:379
+msgid "Thank You message"
+msgstr "Mensaje de éxito"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:380
+msgid "Write a custom error message to display if the message is successfully sent. (if no message is entered, the default message - <strong>Thank you for your message</strong> - will be displayed)"
+msgstr "Escribir un mensaje para mostrar si el mensaje envió con éxito. (sin mensaje, lo mostrará - <strong>Gracias por tu mensaje</strong> - por omisión)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:385
+msgid "<strong>Name</strong> error message"
+msgstr "Mensaje de error para el campo <strong>Nombre</strong>"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:386
+msgid "Write a custom error message to display if there is an error with the <strong>Name</strong> field of the Contact Form. (if no message is entered, the default message - <strong>Please enter your name</strong> - will be displayed)"
+msgstr "Escribir un mensaje para mostrar si hay un error con el campo<strong>Nombre</strong> del formulario de contacto. (sin mensaje, lo mostrará - <strong>Favor de escribir tu nombre</strong> - por omisión)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:389
+msgid "Please enter your name"
+msgstr "Olvidaste escribir tu nombre."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:391
+msgid "<strong>Email</strong> error message"
+msgstr "<strong>Email</strong> mensaje de error"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:392
+msgid "Write a custom error message to display if there is an error with the <strong>Email</strong> field of the Contact Form. (if no message is entered, the default message - <strong>Please enter your email</strong> - will be displayed)"
+msgstr "Escribir un mensaje para mostrar si hay un error con el campo<strong>Email</strong> del formulario de contacto. (sin mensaje, lo mostrará - <strong>Favor de escribir tu email</strong> - por omisión)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:395
+msgid "Please enter your email address."
+msgstr "Tu email no es válido."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:397
+msgid "<strong>Message</strong> error message"
+msgstr "<strong>Mensaje</strong> mensaje de error"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:398
+msgid "Write a custom error message to display if there is an error with the <strong>Message</strong> field of the Contact Form. (if no message is entered, the default message - <strong>Please enter your message</strong> - will be displayed)"
+msgstr "Escribir un mensaje para mostrar si hay un error con el campo<strong>Mensaje</strong> del formulario de contacto. (sin mensaje, lo mostrará - <strong>Favor de escribir tu mensaje</strong> - por omisión)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:401
+msgid "Please enter a message."
+msgstr "Favor de escribir un mensaje"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:405
+msgid "Social Icons"
+msgstr "Icones Social"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:408
+msgid "Show Social Sites Section"
+msgstr "Muestra Enlaces Sociales"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:409
+msgid "Check if you want to show links to sites such as Facebook, Twitter, etc. It will appear in the left sidebar with the header <strong>Other ways to reach me: </strong>"
+msgstr "Marcar si quieres mostrar enlaces a sitios sociales como Facebook, Twitter, etc. Aparecerán en la columna izquierda con el título <strong>Otras maneras encontrarme: </strong>"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:415
+msgid "Facebook Social Link"
+msgstr "Enlace Social Facebook"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:416
+msgid "If you would like a link to your Facebook page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Facebook, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:421
+msgid "Twitter Social Link"
+msgstr "Enlace Social Twitter"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:422
+msgid "If you would like a link to your Twitter page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Twitter, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:427
+msgid "Google+ Social Link"
+msgstr "Enlace Social Google+"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:428
+msgid "If you would like a link to your Google+ page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Google+, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:433
+msgid "LinkedIn Social Link"
+msgstr "Enlace Social LinkedIn"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:434
+msgid "If you would like a link to your LinkedIn page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página LinkedIn, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:440
+msgid "Dribble Social Link"
+msgstr "Enlace Social Dribble"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:441
+msgid "If you would like a link to your Dribble page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Dribble, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:446
+msgid "Behance Social Link"
+msgstr "Enlace Social Behance"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:447
+msgid "If you would like a link to your Behance page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Behance, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:452
+msgid "Delicious Social Link"
+msgstr "Enlace Social Delicious"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:453
+msgid "If you would like a link to your Delicious page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Delicious, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:458
+msgid "Digg Social Link"
+msgstr "Enlace Social Digg"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:459
+msgid "If you would like a link to your Digg page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Digg, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:464
+msgid "DeviantArt Social Link"
+msgstr "Enlace Social DeviantArt"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:465
+msgid "If you would like a link to your DeviantArt page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página DeviantArt, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:470
+msgid "MySpace Social Link"
+msgstr "Enlace Social MySpace"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:471
+msgid "If you would like a link to your MySpace page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página MySpace, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:476
+msgid "Evernote Social Link"
+msgstr "Enlace Social Evernote"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:477
+msgid "If you would like a link to your Evernote page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Evernote, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:482
+msgid "Flickr Social Link"
+msgstr "Enlace Social Flickr"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:483
+msgid "If you would like a link to your Flickr page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Flickr, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:488
+msgid "Netvibes Social Link"
+msgstr "Enlace Social Netvibes"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:489
+msgid "If you would like a link to your Netvibes page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Netvibes, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:494
+msgid "Orkut Social Link"
+msgstr "Enlace Social Orkut"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:495
+msgid "If you would like a link to your Orkut page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Orkut, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:500
+msgid "Reddit Social Link"
+msgstr "Enlace Social Reddit"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:501
+msgid "If you would like a link to your Reddit page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Reddit, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:506
+msgid "ShareThis Social Link"
+msgstr "Enlace Social ShareThis"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:507
+msgid "If you would like a link to your ShareThis page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página ShareThis, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:512
+msgid "StumbleUpon Social Link"
+msgstr "Enlace Social StumbleUpon"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:513
+msgid "If you would like a link to your StumbleUpon page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página StumbleUpon, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:518
+msgid "Technorati Social Link"
+msgstr "Enlace Social Technorati"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:519
+msgid "If you would like a link to your Technorati page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Technorati, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:524
+msgid "Tumblr Social Link"
+msgstr "Enlace Social Tumblr"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:525
+msgid "If you would like a link to your Tumblr page, paste the URL here. (<strong>Note:</strong> Enter complete URL, like: <strong>http://www.twitter.com/username</strong>)"
+msgstr "Si te gustaría dar un enlace a tu página Tumblr, pega la dirección aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: <strong>http://www.twitter.com/username</strong>)"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:532
+msgid "SEO"
+msgstr "SEO"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:535
+msgid "Meta Tag: Description"
+msgstr "Meta: Descripción"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:536
+msgid "The meta tag <strong>description</strong> is found in the header of your webpages and is used by search engines (i.e. Google) to rank and describe your site. Write an overall brief description of your site here."
+msgstr "La etiqueta meta <strong>description</strong> se encuentra en el encabezado de tus páginas y se usa los sitios de búsqueda (i.e. Google) para dar un ranking y una descripción a tu sitio. Escribeuna breve resumen de tu sitio aquí."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:541
+msgid "Meta Tag: Keywords"
+msgstr "Meta: Palabras Claves"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/theme-options.php:542
+msgid "The meta tag <strong>keywords</strong> is found in the header of your webpages and is used by search engines (i.e. Google) to rank and describe your site. List here the keywords that describe your site. <strong>(Example: Blue,Bubble,portfolio,theme)</strong>"
+msgstr "La etiqueta meta <strong>keywords</strong> se encuentra en el encabezado de tus páginas y se usa los sitios de búsqueda (i.e. Google) para dar un ranking y una descripción a tu sitio. Escribe aquí una lista de palabras claves que describen tu sitio.. <strong>(Ejemplo: Blue ,Bubble, portfolio, theme)</strong>"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:72
+msgid "Theme Updates"
+msgstr "Actualizaciones"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:73
+msgid "There is a new version of the"
+msgstr "Hay una nueva versión de"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:73
+msgid "theme available."
+msgstr "Theme disponible."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:73
+msgid "You have version"
+msgstr "Tienes versión"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:73
+msgid "installed. Update to version"
+msgstr "instalado. Actualizar a versión"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:78
+msgid "Update Download and Instructions"
+msgstr "Descargar actualización e instrucciones"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:79
+msgid "Please note:</strong> make a <strong>backup</strong> of the Theme inside your WordPress installation folder"
+msgstr "Nota por favor</strong> hazte un <strong>respaldo</strong> de este Theme en la carpeta de instalación de Wordpress primero"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:80
+msgid "To update the Theme, please visit <a href=\"http://algo.dosmundoscafe.com/\" target=\"blank\">imaginalgo</a>, go to the <strong>Downloads</strong> page and download the latest version."
+msgstr "Para actualizar el Theme por favor visíta <a href=\"http://algo.dosmundoscafe.com/\" target=\"blank\">imaginalgo</a>, vaya a la página de <strong>Descargas</strong> para obtener la versión más recién."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:81
+msgid "Extract the rar (or zip) contents and upload them using FTP to the"
+msgstr "Extrae el archivo rar (o zip) y cárgalo usando FTP a la"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:81
+msgid "folder overwriting the old ones (this is why it is important to backup any changes you have made to the theme files)."
+msgstr "carpeta sobrecopiando los archivos antigüos. (por eso la necesidad de hacer un respaldo de tus cambios antes)."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:82
+msgid "BlueBubble 3.5 introduces a number of new Portfolio thumbnail image sizes not present in previous versions. I recommend the free Resize Thumbnails plugin to automatically create the necessary thumbnails. Click here to download the"
+msgstr "BlueBubble 3.5 utiliza una cantidad de imagenes en miniatura con dimensiones no presentes en versiones anteriores. Te recomiendo el plugin Resize Thumbnails (es gratis) para automaticamente crear las imágenes necesarias. Pincha aquí para descargar el"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/admin/update-notifier.php:82
+msgid "Regenerate Thumbnails plugin</a>. You should only need to use it once."
+msgstr "Regenerate Thumbnails plugin</a>. Se debe usar una sóla vez."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/bb-widgets.php:12
+msgid "A monthly archive of your blog&#8217;s posts"
+msgstr "Un archivo mensual de tus entradas de Blog"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/bb-widgets.php:13
+msgid "BB Archives"
+msgstr "Archivo del BB"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/bb-widgets.php:19
+msgid "Archives"
+msgstr "Archivos"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/bb-widgets.php:45
+#, php-format
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/bb-widgets.php:72
+msgid "Title:"
+msgstr "Título:"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:42
+msgid "Green Button"
+msgstr "Botón Verde"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:43
+msgid "Blue Button"
+msgstr "Botón Azul"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:44
+msgid "Grey Button"
+msgstr "Botón Gris"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:46
+msgid "Buttons & Boxes"
+msgstr "Botones y Cuadros"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:47
+msgid "Alert Box"
+msgstr "Cuadro Alerta"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:48
+msgid "Download Box"
+msgstr "Cuadro Descargar"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:49
+msgid "Info Box"
+msgstr "Cuadro Info"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:50
+msgid "Idea Box"
+msgstr "Cuadro Idea"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:51
+msgid "Highlight Yellow"
+msgstr "Destacar Amarillo"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:52
+msgid "Highlight Red"
+msgstr "Destacar Rojo"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:53
+msgid "Columns"
+msgstr "Columnas"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:55
+msgid "&frac12; Col."
+msgstr "&frac12; Col."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:56
+msgid "&frac12; Col. Last"
+msgstr "&frac12; Col. Ultima"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:57
+msgid "&frac13; Col."
+msgstr "&frac13; Col."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:58
+msgid "&frac13; Col. Last"
+msgstr "&frac13; Col. Ultima"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:59
+msgid "&frac23; Col."
+msgstr "&frac23; Col."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/shortcodes.php:60
+msgid "&frac23; Col. Last"
+msgstr "&frac23; Col. Ultima"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-3.2.2.class.php:108
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-3.2.2.class.php:349
+msgid "Delete this image"
+msgstr "Borrar este imagen"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-3.2.2.class.php:108
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-3.2.2.class.php:306
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-3.2.2.class.php:349
+msgid "Delete"
+msgstr "Borrar"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-3.2.2.class.php:302
+msgid "Uploaded files"
+msgstr "Documentos cargados"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-3.2.2.class.php:312
+msgid "Upload new files"
+msgstr "Cargar nuevos documentos"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-3.2.2.class.php:315
+msgid "Add more file"
+msgstr "Agregar otro documento"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-3.2.2.class.php:356
+msgid "Add more images"
+msgstr "Agregar otro imagen"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-3.2.2.class.php:363
+msgid "Select a color"
+msgstr "Elegir un color"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-usage
+#: - Copy.php:80
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-usage.php:80
+msgid "Project Details"
+msgstr "Detalles del proyecto"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-usage
+#: - Copy.php:87
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-usage.php:87
+msgid "Client's Website URL"
+msgstr "Sitio del cliente"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-usage
+#: - Copy.php:88
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-usage.php:88
+msgid "URL of the client's website such as http://www.websitename.com Please leave blank if the website is currently incomplete."
+msgstr "Dirección del sitio del cliente, como http://www.websitename.com Dejalo vacío si el proyecto aún no está terminado."
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-usage
+#: - Copy.php:95
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-usage.php:95
+msgid "Project Date"
+msgstr "Fecha del proyecto"
+
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-usage
+#: - Copy.php:96
+#: D:\Downloads\xampp-wp-multi\xampp\htdocs\wp-content\themes\BlueBubble/includes/taxonomy/meta-box-usage.php:96
+msgid "The year the project was finished."
+msgstr "El año que terminó el proyecto."
+
+#~ msgid "Thanks for sending an email."
+#~ msgstr "Gracias por enviar un email."
+
+#~ msgid "Image"
+#~ msgstr "Imagen"
+
+#~ msgid ""
+#~ "Using the \"<em>Add an Image</em>\" button, upload an image and paste the "
+#~ "URL here."
+#~ msgstr ""
+#~ "Usando el botón \"<em>Agregar Imagen</em>\" , carga un imagen y pega la "
+#~ "dirección aquí."
+
+#~ msgid "Choose a category"
+#~ msgstr "Eliga a una categoría"
+
+#~ msgid "General"
+#~ msgstr "General"
+
+#~ msgid "Color Scheme"
+#~ msgstr "Combinación de colores"
+
+#~ msgid "Choose a color scheme for the website."
+#~ msgstr "Elige una combinación de colores para el sitio."
+
+#~ msgid "light gray (default)"
+#~ msgstr "light gray (default)"
+
+#~ msgid "white"
+#~ msgstr "white"
+
+#~ msgid "lime"
+#~ msgstr "lime"
+
+#~ msgid "forest"
+#~ msgstr "forest"
+
+#~ msgid "red"
+#~ msgstr "red"
+
+#~ msgid "blue"
+#~ msgstr "blue"
+
+#~ msgid "coffee"
+#~ msgstr "coffee"
+
+#~ msgid "black"
+#~ msgstr "black"
+
+#~ msgid ""
+#~ "Place here any custom CSS you might need. (Note: This overrides any other "
+#~ "stylesheets)"
+#~ msgstr ""
+#~ "Coloca aquí cualquier código personalizado de CSS que necesitas. (Nota: "
+#~ "Este código tendrá preferencia sobre otro documentos y elementos de CSS)"
+
+#~ msgid "Sidebar On Right"
+#~ msgstr "Columna a la Derecha"
+
+#~ msgid ""
+#~ "Check if you want the sidebar on the <strong>right</strong> side. By "
+#~ "default, the sidebar appears on the left."
+#~ msgstr ""
+#~ "Marcar si quieres la columna a la <strong>derecha</strong>. Por omisión "
+#~ "está a la izquierda."
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid ""
+#~ "Enter the full path to your logo.<br /><strong>Ideal size is 192 x 77.</"
+#~ "strong>"
+#~ msgstr ""
+#~ "Ingresa la dirección URL para tu logo. <strong>Tamaño ideal es 192 x 77.</"
+#~ "strong>"
+
+#~ msgid ""
+#~ "A favicon is the 16x16 pixel icon that appears in the address bar of most "
+#~ "browsers and represents your site; Upload a favicon to Wordpress, then "
+#~ "paste the URL to the image that you want to use. (Note: Image should be "
+#~ "in .ico format)"
+#~ msgstr ""
+#~ "Un favicon es el ícono del tamaño 16x16 que aparece en la barra de "
+#~ "dirección en la mayoría de los navegadores y este ícono representa tu "
+#~ "sitio. Carga un ícono a Wordpress y luego pegar la dirección URL del "
+#~ "ícono aquí. (Nota: ícono debe ser en formata .ico)"
+
+#~ msgid "Oldest Posts First?"
+#~ msgstr "¿Antiguos Primeros?"
+
+#~ msgid ""
+#~ "BlueBubble 3.0 normally displays posts from newest to oldest. Check if "
+#~ "you want to show oldest posts first. (Note: This will only change blog "
+#~ "posts, not portfolio posts order)"
+#~ msgstr ""
+#~ "BlueBubble 3.0 normalmente muestra las publicaciones en orden más nuevo "
+#~ "=> más antiguo. Marcar si quieres cambiar este orden. (Nota: Estesolo "
+#~ "cambia el orden de publicaciones del Blog y no se afecta publicaciones "
+#~ "del portafolio)"
+
+#~ msgid "Hide Tweet Buttons?"
+#~ msgstr "¿Esconde Botones Tweet?"
+
+#~ msgid ""
+#~ "Check if you want to hide the Twitter <strong>Tweet</strong> buttons that "
+#~ "appear on posts and pages. (The buttons appear by default)"
+#~ msgstr ""
+#~ "Marcar si quieres esconder los botones <strong>Tweet</strong> de Twitter "
+#~ "que aprecen en publicaciones y páginas. (aparecen por omisión)"
+
+#~ msgid "Search Engine Optimization"
+#~ msgstr "Optimización para Sitios de Búsqueda"
+
+#~ msgid "Updates"
+#~ msgstr "Actualizaciones"
+
+#~ msgid ""
+#~ "You have the latest version of the <?php echo $themename; ?> Wordpress "
+#~ "theme."
+#~ msgstr "Tienes la versión más recién del theme <?php echo $themename; ?>."
+
+#~ msgid ""
+#~ "You can always check the official websites for the latest updates:</p> "
+#~ "<p><a class=\"button\" href=\"http://algo.dosmundoscafe.com/descargar\" "
+#~ "target=\"_blank\">imaginalgo</a> or <a class=\"button\" href=\"http://www."
+#~ "flexible7.com/\" target=\"_blank\">Flexible7</a></p> <p>For help and "
+#~ "support please visit the BlueBubble demo site:</p> <p><a class=\"button\" "
+#~ "href=\"http://bluebubble.dosmundoscafe.com/\" target=\"_blank"
+#~ "\">BlueBubble Website</a>"
+#~ msgstr ""
+#~ "Siempre puedes revisar los sitios oficiales para las noticias más al día:"
+#~ "</p> <p><a class=\"button\" href=\"http://algo.dosmundoscafe.com/descargar"
+#~ "\" target=\"_blank\">imaginalgo</a> o <a class=\"button\" href=\"http://"
+#~ "www.flexible7.com/\" target=\"_blank\">Flexible7</a></p> <p>Por apoyo y "
+#~ "ayuda favor de visitar el sitio de demonstration de BlueBubble:</p> <p><a "
+#~ "class=\"button\" href=\"http://bluebubble.dosmundoscafe.com/\" target="
+#~ "\"_blank\">Sitio web BlueBubble</a>."
+
+#~ msgid " settings saved.</strong></p></div>"
+#~ msgstr " elecciones guardadas.</strong></p></div>"
+
+#~ msgid " settings reset.</strong></p></div>"
+#~ msgstr "Has vuelto las elecciones a sus estado original.</strong></p></div>"
+
+#~ msgid "Logo and Icon"
+#~ msgstr "Logo e Ícono"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "<h3>About BlueBubble</h3>"
+#~ msgstr "<h3>Acerca de BlueBubble</h3>"
+
+#~ msgid ""
+#~ "<p>BlueBubble is a minimalist and elegant Wordpress portfolio theme "
+#~ "originally designed by Thomas Veit, with additions, modifications, and "
+#~ "further designs by Mike Walsh beginning with BlueBubble 3.0</p>"
+#~ msgstr ""
+#~ "<p>BlueBubble es un theme para Wordpress que es minimalista y elegante. "
+#~ "Originalmente diseñado por Thomas Veit, los cambios y actualizaciones "
+#~ "desde versión 3.0 se han hecho por Mike Walsh.</p>"
+
+#~ msgid ""
+#~ "<p>A full list of credits and thanks can be found at the end of the "
+#~ "documents provided with the theme.</p>"
+#~ msgstr ""
+#~ "<p>Se puede encontrar una lista de gracias al fin de los documentos de "
+#~ "ayuda incluidos con el theme.</p>"
+
+#~ msgid ""
+#~ "<p>You can read the latest news about the BlueBubble Wordpress theme at "
+#~ "one of the following sites:</p>"
+#~ msgstr ""
+#~ "<p>Puedes leer las noticias más recienes en los siguientes sitios:</p>"
+
+#~ msgid "<p><strong>Thank you for choosing BlueBubble!</strong></p>"
+#~ msgstr "<p><strong>¡Gracias por elegir a BlueBubble!</strong></p>"
+
+#~ msgid "Social Media Icons:"
+#~ msgstr "Icones de Media Social:"
+
+#~ msgid "Save Changes"
+#~ msgstr "Guardar"
+
+#~ msgid "Add New Item"
+#~ msgstr "Agregar nuevo ítem"
+
+#, fuzzy
+#~ msgid "Edit Item"
+#~ msgstr "Ver ítem"
+
+#~ msgid "New Item"
+#~ msgstr "Nuevo ítem"
+
+#~ msgid "View Item Details"
+#~ msgstr "Ver detalles"
+
+#, fuzzy
+#~ msgid "Search Portfolio Items"
+#~ msgstr "Nº de Portafolio Por Página"
+
+#~ msgid "No portfolio items were found with that criteria"
+#~ msgstr "No se encontró entradas del portafolio con estas detalles."
+
+#~ msgid "No portfolio items found in the Trash with that criteria"
+#~ msgstr ""
+#~ "No se encontró entradas del portafolio en el basurero con estas detalles."
+
+#~ msgid "View Item"
+#~ msgstr "Ver ítem"
+
+#, fuzzy
+#~ msgid "Parent WWD"
+#~ msgstr "Actualizaciones"
+
+#, fuzzy
+#~ msgid "Edit WWD"
+#~ msgstr "Editar ítem"
+
+#, fuzzy
+#~ msgid "Update WWD"
+#~ msgstr "Actualizaciones"
+
+#, fuzzy
+#~ msgid "Add New WWD"
+#~ msgstr "Agregar nuevo ítem"
+
+#~ msgid "View all items filed under %s"
+#~ msgstr "Ver todas las entradas en %s"
+
+#~ msgid "Feed for all posts filed under %s"
+#~ msgstr "Feed por todas las publicaciones en %s"
+
+#, fuzzy
+#~ msgid "Site Description"
+#~ msgstr "Meta: Descripción"
+
+#~ msgid "Enter in your site description."
+#~ msgstr "Describe tu sitio."
+
+#~ msgid "Select the page you're using as a blog"
+#~ msgstr "Elige la página que estás usando como blog"
+
+#, fuzzy
+#~ msgid "FeedBurner URL"
+#~ msgstr "URL Feedburner"
+
+#, fuzzy
+#~ msgid "Footer Copy"
+#~ msgstr "Menú del Pie"
+
+#, fuzzy
+#~ msgid "Styling Options"
+#~ msgstr "Opciones"
+
+#, fuzzy
+#~ msgid "Main Layout"
+#~ msgstr "Configuración"
+
+#, fuzzy
+#~ msgid "Post Options"
+#~ msgstr "Opciones"
+
+#, fuzzy
+#~ msgid "Homepage Options"
+#~ msgstr "Opciones"
+
+#, fuzzy
+#~ msgid "Save All Changes"
+#~ msgstr "Guardar"
+
+#, fuzzy
+#~ msgid "Options Reset"
+#~ msgstr "Opciones"
+
+#, fuzzy
+#~ msgid "Footer Text"
+#~ msgstr "Menú del Pie"
+
+#, fuzzy
+#~ msgid ""
+#~ "Feedburner is a Google service that takes care of your RSS feed. Paste "
+#~ "your Feedburner URL here to \t\t\t\t\t\t\t\t\t\t\n"
+#~ "\t\t\t\t\tlet readers see it in your website"
+#~ msgstr ""
+#~ "Feedburner es un servicio Google que maneja los servicios RSS de tu Blog. "
+#~ "Pega aquí la dirección URL de tu Feedburner para compartirlo con tus "
+#~ "visitantes."
+
+#, fuzzy
+#~ msgid ""
+#~ "Check if you want to <strong>turn on</strong> the old BlueBubble "
+#~ "navigation menu style, used in the original version of the BlueBubble "
+#~ "theme."
+#~ msgstr ""
+#~ "Marcar si quieres <strong>prender</strong> el estilo antiguo de "
+#~ "BlueBubble, en uso antes de BlueBubble 3.0"
+
+#, fuzzy
+#~ msgid ""
+#~ "Upload a 16px x 16px png/gif image that will represent your website's "
+#~ "favicon."
+#~ msgstr ""
+#~ "Carga a un imagen con dimensiones de  16px x 16px en formata png/gif que "
+#~ "será el favicon."
+
+#, fuzzy
+#~ msgid "Use Plain Text Logo"
+#~ msgstr "Usar un logo de texto normal. (no imagen)"
+
+#, fuzzy
+#~ msgid ""
+#~ "Enter the name of the Portfolio category. (you must create categories "
+#~ "before they will show up in the \t\t\t\t\tlist.)"
+#~ msgstr ""
+#~ "Elige el nombre de la categoría que quieres para el Portafolio. (solo "
+#~ "categorías ya creadas aparecerán aquí)"
+
+#, fuzzy
+#~ msgid ""
+#~ "Check if you want to <strong>turn off</strong> the Colorbox popup that "
+#~ "appears when clicking an image \t\t\t\t\ton your portfolio page. (if "
+#~ "turned off, clicking the image will take you to the single portfolio page "
+#~ "with the \n"
+#~ "\t\t\t\t\tlarger image)"
+#~ msgstr ""
+#~ "Marcar si quieres <strong>apagar</strong> el Colorbox que aparece cuando "
+#~ "alguien apreta una imagen en la página del portafolio. (Apretar el imagen "
+#~ "cargará la página del portafolio con el imagen más grande si el Colorbox "
+#~ "está apagado)"
+
+#, fuzzy
+#~ msgid "Facebook Integration"
+#~ msgstr "Enlace Social Facebook"
+
+#, fuzzy
+#~ msgid "Hide Facebook Like Buttons?"
+#~ msgstr "¿Esconde Botones Tweet?"
+
+#, fuzzy
+#~ msgid ""
+#~ "Check if you want to hide the Facebook <strong>Like</strong> buttons that "
+#~ "appear on posts and pages. (The buttons appear by default)"
+#~ msgstr ""
+#~ "Marcar si quieres esconder los botones <strong>Tweet</strong> de Twitter "
+#~ "que aprecen en publicaciones y páginas. (aparecen por omisión)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Facebook page, paste the URL here. "
+#~ "(<strong>Note:</strong> Enter\t\t\t\t\t\n"
+#~ "\t\t\t\t\t\t complete URL, like: <strong>http://www.twitter.com/username</"
+#~ "strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Facebook, pega la dirección "
+#~ "aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Twitter page, paste the URL here. "
+#~ "(<strong>Note:</strong> Enter \n"
+#~ "\t\t\t\t\t\tcomplete URL, like: <strong>http://www.twitter.com/username</"
+#~ "strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Twitter, pega la dirección aquí. "
+#~ "(<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your LinkedIn page, paste the URL here. "
+#~ "(<strong>Note:</strong> Enter \t\t\t\t\t    complete URL, like: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página LinkedIn, pega la dirección "
+#~ "aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Behance page, paste the URL here. "
+#~ "(<strong>Note:</strong> Enter \t\t\t\t\t\n"
+#~ "\t\t\t\t\t\tcomplete URL, like: <strong>http://www.twitter.com/username</"
+#~ "strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Behance, pega la dirección aquí. "
+#~ "(<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Delicious page, paste the URL here. "
+#~ "(<strong>Note:</strong> \t\t\t\t\t\t\n"
+#~ "\t\t\t\t\t\t\tEnter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Delicious, pega la dirección "
+#~ "aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Digg page, paste the URL here. "
+#~ "(<strong>Note:</strong> Enter\t\t\t\t\t\t\n"
+#~ "\t\t\t\t\t\t\tcomplete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Digg, pega la dirección aquí. "
+#~ "(<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your DeviantArt page, paste the URL here. "
+#~ "(<strong>Note:</strong>\t\t\t\t\t\t\n"
+#~ "\t\t\t\t\t\t\t Enter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página DeviantArt, pega la dirección "
+#~ "aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your MySpace page, paste the URL here. "
+#~ "(<strong>Note:</strong> \n"
+#~ "\t\t\t\t\t\t\tEnter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página MySpace, pega la dirección aquí. "
+#~ "(<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Evernote page, paste the URL here. "
+#~ "(<strong>Note:</strong> \n"
+#~ "\t\t\t\t\t\t\tEnter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Evernote, pega la dirección "
+#~ "aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Flickr page, paste the URL here. "
+#~ "(<strong>Note:</strong> \n"
+#~ "\t\t\t\t\t\t\tEnter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Flickr, pega la dirección aquí. "
+#~ "(<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Netvibes page, paste the URL here. "
+#~ "(<strong>Note:</strong> \n"
+#~ "\t\t\t\t\t\t\tEnter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Netvibes, pega la dirección "
+#~ "aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Orkut page, paste the URL here. "
+#~ "(<strong>Note:</strong> \n"
+#~ "\t\t\t\t\t\t\tEnter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Orkut, pega la dirección aquí. "
+#~ "(<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Reddit page, paste the URL here. "
+#~ "(<strong>Note:</strong> \n"
+#~ "\t\t\t\t\t\t\tEnter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Reddit, pega la dirección aquí. "
+#~ "(<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your ShareThis page, paste the URL here. "
+#~ "(<strong>Note:</strong> \n"
+#~ "\t\t\t\t\t\t\tEnter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página ShareThis, pega la dirección "
+#~ "aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your StumbleUpon page, paste the URL here. "
+#~ "(<strong>Note:\t\t\t\t\t\t\n"
+#~ "\t\t\t\t\t\t\t</strong> Enter complete URL, like: <strong>http://www."
+#~ "twitter.com/username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página StumbleUpon, pega la dirección "
+#~ "aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Technorati page, paste the URL here. "
+#~ "(<strong>Note:</strong>\n"
+#~ "\t\t\t\t\t\t\t Enter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Technorati, pega la dirección "
+#~ "aquí. (<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like a link to your Tumblr page, paste the URL here. "
+#~ "(<strong>Note:</strong> \n"
+#~ "\t\t\t\t\t\t\tEnter complete URL, like: <strong>http://www.twitter.com/"
+#~ "username</strong>)"
+#~ msgstr ""
+#~ "Si te gustaría dar un enlace a tu página Tumblr, pega la dirección aquí. "
+#~ "(<strong>Nota:</strong> Escribe direcciones completas, como: "
+#~ "<strong>http://www.twitter.com/username</strong>)"
+
+#~ msgid "(Updated: "
+#~ msgstr "(Nuevo:"
+
+#~ msgid "&larr; Older Entries"
+#~ msgstr "&larr; Entradas anteriores"
+
+#~ msgid "Newer Entries &rarr;"
+#~ msgstr "Entradas nuevas &rarr;"
+
+#, fuzzy
+#~ msgid "Nothing Found"
+#~ msgstr "No encontrado"
+
+#~ msgid "You forgot to enter your name."
+#~ msgstr "Olvidaste escribir tu nombre."
+
+#~ msgid "You forgot to enter your message."
+#~ msgstr "Olvidaste escribir un mensaje."
+
+#~ msgid "Send a copy of this email to yourself"
+#~ msgstr "Envia una copia de este correo a ti mismo."
+
+#~ msgid "Send"
+#~ msgstr "Enviar"
+
+#~ msgid "Pages:"
+#~ msgstr "Página:"
+
+#~ msgid "Email from"
+#~ msgstr "Email de"
+
+#~ msgid "From: "
+#~ msgstr "De:"
+
+#, fuzzy
+#~ msgid "Twitter (@username)"
+#~ msgstr "Nombre Usuario Twitter"
+
+#~ msgid "No Twitter Field in Comments Form?"
+#~ msgstr "No campo de Twitter en formulario de comentarios"
+
+#, fuzzy
+#~ msgid ""
+#~ "Check if you want to hide the <strong>Twitter Field</strong> in the "
+#~ "comments form. (this field appears by default)"
+#~ msgstr ""
+#~ "Marcar si quieres esconder los botones <strong>Tweet</strong> de Twitter "
+#~ "que aprecen en publicaciones y páginas. (aparecen por omisión)"
+
+#, fuzzy
+#~ msgid "<div class=\"pagination\"><span> "
+#~ msgstr "<div class=\"pagination\"><span>Página "
+
+#~ msgid ""
+#~ "Check if you want to disable the entries that appear below the title and "
+#~ "thumbnails on the portfolio page. <strong>Note:</strong> This only works "
+#~ "if you are using normal Posts for the portfolio - the Custom Post "
+#~ "<strong>Projects</strong> will still show entry text."
+#~ msgstr ""
+#~ "Citar este campo para deshabilitar las entradas que aparecen debajo del "
+#~ "título y imagenes en la página del Portafolio."
+
+#~ msgid "Leave a Reply"
+#~ msgstr "Deja una respuesta"
+
+#~ msgid "Leave a Reply to %s"
+#~ msgstr "Deja una respuesta a %s"
+
+#~ msgid ""
+#~ "<p>You must be <a href=\"<?php echo wp_login_url( get_permalink() ); ?>"
+#~ "\">logged in</a> to post a comment.</p>"
+#~ msgstr ""
+#~ "<p>Debe <a href=\"<?php echo wp_login_url( get_permalink() ); ?>"
+#~ "\">iniciar sesión</a> para dejar un comentario.</p>"
+
+#~ msgid "Logged in as"
+#~ msgstr "Sesión iniciada como"
+
+#~ msgid "Log out &raquo;"
+#~ msgstr "Salir"
+
+#~ msgid "Mail (will not be published)"
+#~ msgstr "Email (no será publicado)"
+
+#~ msgid "Submit Comment"
+#~ msgstr "Enviar Comentario"
+
+#~ msgid "<p><strong>Coming Soon:</strong> Arte Con Alas</p>"
+#~ msgstr "<p><strong>Próximamente:</strong> Arte Con Alas</p>"
+
+#, fuzzy
+#~ msgid "Thank you for using <?php echo $themename; ?> Wordpress theme."
+#~ msgstr "Tienes la versión más recién del theme <?php echo $themename; ?>."
+
+#~ msgid "Thank you for using the BlueBubble Wordpress theme."
+#~ msgstr "Gracias por eligir el theme BlueBubble para Wordpress."
+
+#~ msgid "Portfolio, Blog and Comments"
+#~ msgstr "Portafolio, Blog y Comentarios"
+
+#~ msgid "Header, Footer and Icons"
+#~ msgstr "Encabezado, Pie e Íconos"
+
+#~ msgid "Contact Form and Social Icons"
+#~ msgstr "Íconos Sociales y Formulario de Contacto"
+
+#~ msgid "To easily use the"
+#~ msgstr "Para fácilmente usar el "
+
+#~ msgid "theme, you can use the menu below."
+#~ msgstr "theme, puedes usar el menu de opciones que sigue."
+
+#~ msgid "Save changes"
+#~ msgstr "Guardar"
+
+#~ msgid "Reset"
+#~ msgstr "Borrar"
+
+#~ msgid "Icons:"
+#~ msgstr "Iconos:"
+
+#~ msgid "Reset All"
+#~ msgstr "Borrar Todo"
+
+#~ msgid "available. Go to the"
+#~ msgstr "disponible. Vaya a la"
+
+#~ msgid "BlueBubble 3.0 Theme Page"
+#~ msgstr " Página del BlueBubble 3.0 Theme"
+
+#~ msgid ""
+#~ "or the <a href=\"http://www.flexible7.com/\" target=\"_blank\">Flexible "
+#~ "7</a> website"
+#~ msgstr ""
+#~ "o el sitio <a href=\"http://www.flexible7.com/\" target=\"_blank"
+#~ "\">Flexible 7</a> "
+
+#~ msgid "to download the latest version."
+#~ msgstr "para descargar la nueva versión."
+
+#~ msgid "No Comments &rarr;"
+#~ msgstr "Sin comentarios &rarr;"
+
+#~ msgid "1 Comment &rarr;"
+#~ msgstr "1 comentario &rarr;"
+
+#~ msgid "% Comments &rarr;"
+#~ msgstr "% comentarios &rarr;"
+
+#~ msgid "404 Menu"
+#~ msgstr "Menú del Error 404"
+
+#~ msgid ""
+#~ "<strong>Hi there.</strong> I am BlueBubble, a brand-new minimal y elegant "
+#~ "wordpress portfolio theme \n"
+#~ "exclusivey designed for <strong>you</strong> <br /> - by <a href=\"http://"
+#~ "www.thomasveit.com\" target=\"_blank\">Thomas Veit</a> with love on a Mac."
+#~ msgstr "poop"
+
+#~ msgid ""
+#~ "<strong>Hi there.</strong> I am BlueBubble, a brand-new minimal y elegant "
+#~ "Wordpress portfolio theme exclusively designed a"
+#~ msgstr "poop"
+
+#~ msgid ""
+#~ "<strong>Hi there.</strong> I am BlueBubble, a brand-new minimal y elegant "
+#~ "Wordpress portfolio theme"
+#~ msgstr ""
+#~ "<strong>Hola.</strong> Soy BlueBubble, un nuevo theme de portafolio "
+#~ "Wordpress elegante y minimalista"
+
+#, fuzzy
+#~ msgid ""
+#~ "<strong>Hi there.</strong> BlueBubble 3.0, compatible with Wordpress 3.0, "
+#~ "has been released. <strong>Version 3.0 Updates</strong> <br /> - by <a "
+#~ "href=\"http://arte.dosmundoscafe.com\" target=\"_blank\">Mike Walsh</a> "
+#~ "with love on a PC."
+#~ msgstr ""
+#~ "<strong>¡Nueva!</strong> BlueBubble 3.0, lo que es compatible con "
+#~ "Wordpress 3.0, ya ha salido. <strong>Actualizaciones de versión 3.0</"
+#~ "strong> <br /> - por <a href=\"http://arte.dosmundoscafe.com\" target="
+#~ "\"_blank\">Mike Walsh</a> con amor y un PC."
+
+#~ msgid ""
+#~ "There is a newer version of <?php echo $theme_name; ?> available. Go to "
+#~ "the <a href=\"http://bluebubble.dosmundoscafe.com/downloads/\" target="
+#~ "\"_blank\">BlueBubble 3.0 Theme Page</a> to download the latest version."
+#~ msgstr ""
+#~ "Hay una nueva versión de <?php echo $theme_name; ?> disponible. Vaya a la "
+#~ "<a href=\"http://bluebubble.dosmundoscafe.com/downloads/\" target=\"_blank"
+#~ "\">Página de BlueBubble 3.0</a> para descargar la versión nueva."
