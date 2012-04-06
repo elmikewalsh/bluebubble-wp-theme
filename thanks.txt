@@ -1,5 +1,5 @@
-BlueBubble v3.5
-November 11, 2011
+BlueBubble v3.5.5
+April 5, 2012
 
 Thank you for downloading the latest fversion of BlueBubble! Remember that you can find the latest version of BlueBubble at the following sites:
 

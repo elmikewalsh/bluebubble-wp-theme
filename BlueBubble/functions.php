@@ -511,7 +511,7 @@ require_once (bb_FILEPATH . '/admin/admin-functions.php');
 require_once (bb_FILEPATH . '/admin/admin-interface.php');
 require_once (bb_FILEPATH . '/admin/theme-options.php');
 require_once (bb_FILEPATH . '/admin/theme-functions.php');
-require_once (bb_FILEPATH . '/admin/update-notifier.php');
+require_once (bb_FILEPATH . '/admin/plugins-require/plugins-require.php');
 require_once (bb_FILEPATH . '/includes/bb-widgets.php');
 include_once (bb_FILEPATH . '/includes/shortcodes.php');
 include_once (bb_FILEPATH . '/includes/taxonomy/meta-box-3.2.2.class.php');

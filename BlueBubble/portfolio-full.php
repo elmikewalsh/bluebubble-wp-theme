@@ -10,6 +10,8 @@ Template Name: Portfolio: 3 Column Full
 	if ( get_option('bb_portfolio_num') ) {  $portfolio_num = get_option('bb_portfolio_num'); 
     }else{ $portfolio_num = '6'; } //sets number of portfolio items per page
 ?>
+
+<?php $bb_portfolio_cat = get_option('bb_portfolio_cat');  ?>
 				
 
        <div id="content-full">
@@ -29,28 +31,24 @@ Template Name: Portfolio: 3 Column Full
 	 /* END Mali Studio dummy fix */
 	 ?>  
      
-    <?php  query_posts("paged=$paged&category_name=$bb_portfolio_cat&posts_per_page=$portfolio_num"); ?>
+    <?php query_posts('paged='.$paged.'&category_name='.$bb_portfolio_cat.'&posts_per_page='.$portfolio_num); ?>
         <?php while (have_posts()) : the_post(); ?>
 
 
             <div class="post-3full" id="post-<?php the_ID(); ?>">
-
-
 				<div class="box">
-                <?php if ( get_option('bb_no_colorbox') !='false' ) { ?>
+				<?php if ( get_option('bb_no_colorbox') ) { ?>
                 <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"> 
                 <?php }else{ ?>
-                <?php if (has_post_thumbnail()=='') { ?><img width='300' height='145' src="<?php echo bloginfo('template_directory'); ?>/images/no-img/no-img657x318.png" /><?php } else { ?>
                 <?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-                <a href="<?php echo wp_get_attachment_url($thumbID); ?>" rel="project">
-				<span class="roll-3full" ></span><?php } // End check for No Colorbox ?>
-         		<?php echo the_post_thumbnail('3colfull-thumb'); ?>
-				</a><?php } ?>
+                <a href="<?php echo wp_get_attachment_url($thumbID); ?>" rel="project"><?php } // End check for No Colorbox ?>
+				<?php the_post_thumbnail('3colfull-thumb') ?>
+				</a>
                 
 				
 				</div>
 			
-				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php short_title('**','**',true, '41'); ?></a></h2>
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				
                 <?php if ( get_option('bb_no_entry') !='true' ) { ?>
 				<div class="entry">

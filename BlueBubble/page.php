@@ -23,7 +23,7 @@
 				<div class="entry">
 					<?php the_content (__('Read the rest of this entry &raquo;', 'BlueBubble')); ?>
 					
-					<a class="homelink" title="<?php echo bloginfo('blog_name'); ?>" href="<?php echo get_option('home'); ?>/"> &larr; <?php _e('Back') ?> </a>
+					<div class="homelink"><a class="homelink" title="<?php echo bloginfo('blog_name'); ?>" href="<?php echo get_option('home'); ?>/"> &larr; <?php _e('Back') ?> </a></div>
 					
 				</div>
 

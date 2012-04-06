@@ -39,20 +39,16 @@ Template Name: Portfolio
 
 				
 				<div class="box-new">
-                <?php if ( get_option('bb_no_colorbox') !='false' ) { ?>
+				<?php if ( get_option('bb_no_colorbox') ) { ?>
                 <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"> 
                 <?php }else{ ?>
-                <?php if (has_post_thumbnail()=='') { ?><img width='310' height='150' src="<?php echo bloginfo('template_directory'); ?>/images/no-img/no-img657x318.png" /><?php } else { ?>
                 <?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-                <a href="<?php echo wp_get_attachment_url($thumbID); ?>" rel="project">
-				<span class="roll" ></span><?php } // End check for No Colorbox ?>
-         		<?php echo the_post_thumbnail('portfolio-thumb'); ?>
-				</a><?php } ?>
-                
-				
+                <a href="<?php echo wp_get_attachment_url($thumbID); ?>" rel="project"><?php } // End check for No Colorbox ?>
+				<?php the_post_thumbnail('portfolio-thumb') ?>
+				</a>			
 				</div>
 			
-				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php short_title('','',true, '29'); ?></a></h2>
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				
                 <?php if ( get_option('bb_no_entry') !='true' ) { ?>
 				<div class="entry">

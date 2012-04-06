@@ -9,12 +9,15 @@ body {
 	margin:20px;
 	}
 
-blockquote{
-	border-left:4px solid #161616 !important;
-	margin-left:15px;
-	padding:0 12px 0 12px;
-	}
-
+blockquote {
+    border-left:4px solid #161616 !important;
+    margin-bottom:16px;
+    padding:0 12px;
+    font-family: Georgia,"Bitstream Charter",serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #eeeeee !important;
+} 
 a{
 	color:#909090 !important;
 	text-decoration:none;
@@ -92,7 +95,7 @@ a{
 .header-nav li a {
 	margin-right: 10px;
 	line-height:38px;
-	color: #000 !important;
+	color: #999 !important;
 	font-weight:bold;
 	padding: 2px 12px 3px 11px;
 	outline: none;
@@ -434,8 +437,16 @@ input#submit:hover {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	float: left;
-	margin: 5px -90px 0 0;
+	margin: 5px 5px 0 0;
 	padding: 7px;
+}
+
+#entry-author-info #author-description {
+    width:520px;
+    float: left;
+    word-wrap: break-word;
+    position:relative;
+    margin: 0 0 0 10px;
 }
 
 #entry-author-info h2 {
@@ -750,11 +761,42 @@ p.comment-form-comment textarea#comment {width:600px;border: 1px solid #bdd4dd;m
 p.comment-form-author input#author:focus, p.comment-form-email input#email:focus, p.comment-form-url input#url:focus, p.comment-form-twitter input#twitter:focus, p.comment-form-comment textarea#comment:focus {border: 1px solid #AFCDD8;background-color: #EBF2F4; }
 
 
+
+/* CSS template for Contact Form 7 */
+/* Contact form design by Jack at DesignedByJack.com */
+
+/* Form Alignment */
+.wpcf7-form											{ margin: 10px 0 0 0; }
+
+/* Removes that dodgy active state glow in Chrome and Safari */
+.wpcf7-form textarea, .wpcf7-form input					{ outline: none; }
+
+/* General styling of input and textarea fields */
+.wpcf7-form label										{ display: block; margin: 0 0 4px 0; font-size: 0.85em; }
+.wpcf7-form input, .wpcf7-form textarea					{ padding: 6px; margin: 0 0 10px 0; border: 1px #c4c4c4 solid; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; font: 1em "Arial", Tahoma, Verdana, Sans-Serif; }
+.wpcf7-form input										{ width: 45%; }
+.wpcf7-form textarea									{ width: 95%; }
+.wpcf7-form input:focus, .wpcf7-form textarea:focus		{ background-color: #f4f4f4; border-color: #a3a3a3; }
+.wpcf7-form .placeholder								{ color: #a3a3a3; }
+
+/* Submit button CSS */
+.wpcf7-form .contact-submit							{ width: auto; font-weight: bold; color: #fff; background-color: #2c74ce; border: 2px #1e5ca9 solid; -moz-border-top-colors: #1e5ca9 #2aa5eb; -moz-border-right-colors: #1e5ca9 #2aa5eb; -moz-border-bottom-colors: #1e5ca9 #2aa5eb; -moz-border-left-colors: #1e5ca9 #2aa5eb; }
+.wpcf7-form .contact-submit:focus					{ background-color: #2c74ce; border-color: #46b6f0; }
+.contact-submit:hover								{ cursor: pointer; background-color: #1e5ca9; }
+
+/* Validation alerts styling */
+.wpcf7-form div.wpcf7-validation-errors				{ border: 1px #d01717 solid; background-color: #f6c3c3; color: #333333}
+.wpcf7-form div.wpcf7-response-output				{ margin: 0; padding: 5px; }
+.wpcf7-form div.wpcf7-mail-sent-ok					{ border: 1px #34b320 solid; background-color: #c7f2c1; color: #333333}
+.wpcf7-form span.wpcf7-not-valid-tip				{ color: #d01717; padding: 3px; font-size: 0.8em; position: static; display: block; margin: 0 0 10px 0; }
+
+
 /* Must log in paragraph. */
 p.must-log-in { }
 
 /* Logged in paragraph. */
 p.logged-in-as { }
+
 
 /* Comment notes paragraph. */
 p.comment-notes {
@@ -777,3 +819,29 @@ p.form-submit {}
 
 /* Submit button. */
 input#submit {margin:10px 0 0 5px;width:200px;cursor:pointer;}
+
+
+.homelink {margin:25px 0 0 0;}
+
+  a.button:before { 
+    height: 23px;
+    bottom: -4px;
+    border-top: 0;
+    
+    -webkit-border-radius: 0 0 3px 3px; 
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    
+    -webkit-box-shadow: 0 1px 1px 0px #101010;
+    -moz-box-shadow: 0 1px 1px 0px #101010;
+    box-shadow: 0 1px 1px 0px #101010;
+}
+  a.button:active {
+    border: none;
+    bottom: -4px;
+    margin-bottom: 7px;
+    
+    -webkit-box-shadow: 0 1px 1px #111111;
+    -moz-box-shadow:  0 1px 1px #111111;
+    box-shadow:  1px 1px 0 #111111, inset 0 1px 1px rgba(0, 0, 0, 0.3);
+  }

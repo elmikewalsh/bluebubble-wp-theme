@@ -355,7 +355,7 @@ $options[] = array( "name" => __("Number of Twitter Feeds", 'BlueBubble'),
 
 	
 
-$options[] = array( "name" => __('Contact Form','BlueBubble'),
+/*$options[] = array( "name" => __('Contact Form','BlueBubble'),
 					"type" => "heading");
 	
 $options[] = array( "name" => __("Contact Form Email Address", 'BlueBubble'),
@@ -398,7 +398,7 @@ $options[] = array( "name" => __("<strong>Message</strong> error message", 'Blue
 	"desc" => __("Write a custom error message to display if there is an error with the <strong>Message</strong> field of the Contact Form. (if no message is entered, the default message - <strong>Please enter your message</strong> - will be displayed)", 'BlueBubble'),
 	"id" => $shortname."_message_error",
 	"type" => "text",
-	"std" => __("Please enter a message."));				
+	"std" => __("Please enter a message."));*/				
 
 
 

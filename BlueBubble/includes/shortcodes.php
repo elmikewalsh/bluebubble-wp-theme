@@ -38,20 +38,27 @@ add_filter( 'mce_buttons_2', 'themeit_mce_buttons_2' );
 function themeit_tiny_mce_before_init( $settings ) {
   $settings['theme_advanced_blockformats'] = 'p,a,div,span,h1,h2,h3,h4,h5,h6,tr';
 
-  $style_formats = array(
-      array( 'title' => __('Green Button','BlueBubble'),  'inline' => 'a',  'classes' => 'gbutton' ),
-      array( 'title' => __('Blue Button','BlueBubble'),   'inline' => 'a',  'classes' => 'bbutton' ),
-      array( 'title' => __('Grey Button','BlueBubble'),   'inline' => 'a',  'classes' => 'grbutton'),
-      
-      array( 'title' => __('Buttons & Boxes','BlueBubble')),
-      array( 'title' => __('Alert Box','BlueBubble'),          'block'    => 'div',  'classes' => 'alert' ),
-	array( 'title' => __('Download Box','BlueBubble'),       'block'    => 'div',  'classes' => 'dload' ),
-	array( 'title' => __('Info Box','BlueBubble'),           'block'    => 'div',  'classes' => 'info' ),
-	array( 'title' => __('Idea Box','BlueBubble'),           'block'    => 'div',  'classes' => 'idea' ),
+  $style_formats = array( 
       array( 'title' => __('Highlight Yellow','BlueBubble'),   'inline'   => 'span', 'classes' => 'hl-yellow' ),
-	array( 'title' => __('Highlight Red','BlueBubble'),      'inline'   => 'span', 'classes' => 'hl-red' ),
-      array( 'title' => __('Columns','BlueBubble')),
+	  array( 'title' => __('Highlight Red','BlueBubble'),      'inline'   => 'span', 'classes' => 'hl-red' ),
+      array( 'title' => __('Buttons & Boxes','BlueBubble')),
+      array( 'title' => __('Gray Button','BlueBubble'),  'inline' => 'a',  'classes' => 'button gray' ),
+      array( 'title' => __('Dark Gray Button','BlueBubble'),  'inline' => 'a',  'classes' => 'button darkgray'),
+      array( 'title' => __('Green Button','BlueBubble'),  'inline' => 'a',  'classes' => 'button green'),
+      array( 'title' => __('Blue Button','BlueBubble'),   'inline' => 'a',  'classes' => 'button blue'),
+      array( 'title' => __('Dark Blue Button','BlueBubble'),   'inline' => 'a',  'classes' => 'button darkblue'),
+      array( 'title' => __('Black Button','BlueBubble'),   'inline' => 'a',  'classes' => 'button black'),
+      array( 'title' => __('Turquoise Button','BlueBubble'),   'inline' => 'a',  'classes' => 'button turquoise'),
+      array( 'title' => __('Yellow Button','BlueBubble'),   'inline' => 'a',  'classes' => 'button yellow'),
+      array( 'title' => __('Purple Button','BlueBubble'),   'inline' => 'a',  'classes' => 'button purple'),
+      array( 'title' => __('Pink Button','BlueBubble'),   'inline' => 'a',  'classes' => 'button pink' ),
 
+      array( 'title' => __('Alert Box','BlueBubble'),          'block'    => 'div',  'classes' => 'alert' ),
+   	  array( 'title' => __('Download Box','BlueBubble'),       'block'    => 'div',  'classes' => 'dload' ),
+	  array( 'title' => __('Info Box','BlueBubble'),           'block'    => 'div',  'classes' => 'info' ),
+	  array( 'title' => __('Idea Box','BlueBubble'),           'block'    => 'div',  'classes' => 'idea' ),
+
+      array( 'title' => __('Columns','BlueBubble')),
       array( 'title' => __('&frac12; Col.','BlueBubble'),      'block'    => 'div',  'classes' => 'one_half' ),
       array( 'title' => __('&frac12; Col. Last','BlueBubble'), 'block'    => 'div',  'classes' => 'one_half last' ),
       array( 'title' => __('&frac13; Col.','BlueBubble'),      'block'    => 'div',  'classes' => 'one_third' ),
